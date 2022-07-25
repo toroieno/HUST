@@ -1,0 +1,2 @@
+# HUST
+many major assignments
