@@ -25,10 +25,10 @@ class BT:
   def HoocnerNguoc(self):
     newArr = [int(num) for num in self.arrHeSoGoc]
 
-    print('    c    |      w_(n+1)(x)      |   he so   \n')
+    print('    c    |    \t\t  w_(n+1)(x)  \t\t    |   he so   \n')
     c = newArr.pop(0)
     arrB = [1, -c]
-    print('{:8} | {:20} | {:8}'.format(c, self.PrintF(arrB), str(arrB)))
+    print('{:8} | {:40} | {:8}'.format(c, self.PrintF(arrB), str(arrB)))
     arrB.append(0)
     while newArr:
       c = newArr.pop()
@@ -38,7 +38,7 @@ class BT:
         a_k = arrB[i] - arrB[i-1] * c #a_k = b_k - b_(k+1) * c
         arrA.append(a_k)
       
-      print('{:8} | {:20} | {:8}'.format(c, self.PrintF(arrA), str(arrA)))
+      print('{:8} | {:40} | {:8}'.format(c, self.PrintF(arrA), str(arrA)))
       arrB = arrA.copy()
       arrB.append(0)
 
