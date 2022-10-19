@@ -25,7 +25,6 @@ class BT:
     print('he so k  |    Pn(c)   |     Pn(c)/(x-c)     |  P(k)(c)  ')
     while k < lenArr:
       bac = lenArr - k #bac cua phuong trinh hien tai
-      # arrB = arr.array('d', [int(arrA[0])]) #bn = an
       arrB = [] 
       arrB.append(int(arrA[0])) #bn = an
       for i in range(1, bac+1):
