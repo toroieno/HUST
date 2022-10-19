@@ -1,8 +1,8 @@
 class BT:
-  def ReadFile(self):
+  def read_file(self):
     f = open('./input1.txt', 'r')
     try:
-      self.arrHeSoGoc = f.readline().strip().split(' ')
+      self.arr_he_so_goc = f.readline().strip().split(' ')
       self.c = int(f.readline())
     except:
       print('error when read file!')
@@ -10,17 +10,17 @@ class BT:
       f.close()
 
   #Qn(c) - tinh gia tri ham bac n tai c
-  def Q(self, heso, c):
-    mu = len(heso) - 1
+  def Q(self, he_so, c):
+    mu = len(he_so) - 1
     f = 0
-    for i in heso:
+    for i in he_so:
       f += i * c**mu
       mu -= 1
     return f
   #bai tap 1: Pn(c), Pn(c)/(x-c), P(k)(c)
-  def HoocnerXuoi(self):
-    arrA = self.arrHeSoGoc
-    lenArr = len(self.arrHeSoGoc)
+  def hoocner_xuoi(self):
+    arrA = self.arr_he_so_goc
+    lenArr = len(self.arr_he_so_goc)
     k = 1
     print('he so k  |    Pn(c)   |     Pn(c)/(x-c)     |  P(k)(c)  ')
     while k < lenArr:
@@ -41,8 +41,8 @@ class BT:
   
   #main
   def run(self):
-    self.ReadFile()
-    self.HoocnerXuoi()
+    self.read_file()
+    self.hoocner_xuoi()
 
 #-------------main-------------
 bt = BT()
