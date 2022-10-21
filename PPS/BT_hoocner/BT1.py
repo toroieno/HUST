@@ -8,7 +8,10 @@ class BT:
       print('error when read file!')
     finally:
       f.close()
-
+  def giai_thua(self, x):
+    if x == 0:
+      return 1
+    return self.giai_thua(x-1) * x
   #Qn(c) - tinh gia tri ham bac n tai c
   def Q(self, he_so, c):
     mu = len(he_so) - 1
@@ -18,11 +21,12 @@ class BT:
       mu -= 1
     return f
   #bai tap 1: Pn(c), Pn(c)/(x-c), P(k)(c)
-  def hoocner_xuoi(self):
+  def hoocner_xuoi  (self):
     arrA = self.arr_he_so_goc
     lenArr = len(self.arr_he_so_goc)
     k = 1
-    print('he so k  |    Pn(c)   |     Pn(c)/(x-c)     |  P(k)(c)  ')
+    print('he so k  |    Pn(c)   |  \t\t   Pn(c)/(x-c)   \t\t   |  P(k)(c)  ')
+    print('_'*8+' | '+'_'*10+' | '+'_'*50+' | '+'_'*8)
     while k < lenArr:
       bac = lenArr - k #bac cua phuong trinh hien tai
       arrB = [] 
@@ -32,9 +36,9 @@ class BT:
         arrB.append(b_k)
       
       P1 = arrB.pop(-1) #Pn(c)
-      P2 = self.Q(arrB, self.c) #P(k)(c)
+      P2 = self.Q(arrB, self.c)*self.giai_thua(k) #P(k)(c)
 
-      print('{:8} | {:10} | {:19} | {:8}'.format(k, P1, str(arrB), P2))
+      print('{:8} | {:10} | {:50} | {:8}'.format(k, P1, str(arrB), P2))
 
       arrA = arrB
       k = k + 1
