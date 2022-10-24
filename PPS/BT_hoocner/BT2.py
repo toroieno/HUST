@@ -33,7 +33,7 @@ class BT:
     
     arrB.append(0)
     while newArr:
-      c = newArr.pop()
+      c = newArr.pop(0)
       arrA = []
       arrA.append(arrB[0]) #an = bn
       for i in range(1, len(arrB)):

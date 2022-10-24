@@ -21,7 +21,7 @@ class BT:
       mu -= 1
     return f
   #bai tap 1: Pn(c), Pn(c)/(x-c), P(k)(c)
-  def hoocner_xuoi  (self):
+  def hoocner_xuoi(self):
     arrA = self.arr_he_so_goc
     lenArr = len(self.arr_he_so_goc)
     k = 1
