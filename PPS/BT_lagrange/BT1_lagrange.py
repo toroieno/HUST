@@ -8,6 +8,8 @@ class Lagrange:
       self.x = []
       self.y = []
       all_arr = f.read().split("\n")
+      while all_arr[-1] == '':
+        all_arr.pop(-1)
       for each in all_arr:
         arr = each.split(" ")
         self.x.append(float(arr[0]))
@@ -82,7 +84,7 @@ class Lagrange:
     print(self.w_n)
 
   #tinh P_n(c)
-  def aiken(self):
+  def aiken(self, c):
     pass
   
   def draw_graph(self):
