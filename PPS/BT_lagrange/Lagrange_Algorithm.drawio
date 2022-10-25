@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="1rPOivrc0qdIIZzVxFxa" name="Lagrange">
-        <mxGraphModel dx="538" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+        <mxGraphModel dx="934" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -55,7 +55,7 @@
                 <mxCell id="fCaCkwcuU478UPee1ZoP-29" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fCaCkwcuU478UPee1ZoP-26" target="fCaCkwcuU478UPee1ZoP-28" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="fCaCkwcuU478UPee1ZoP-26" value="$$w_{tmp}=\frac{y_k}{d_i}.\frac{w_{n+1}(x)}{x-x_k}$$" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="fCaCkwcuU478UPee1ZoP-26" value="$$w_{tmp}=\frac{y_k}{d_i}\times\frac{w_{n+1}(x)}{x-x_k}$$" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="82.5" y="750" width="165" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="fCaCkwcuU478UPee1ZoP-31" value="" style="edgeStyle=none;html=1;" parent="1" source="fCaCkwcuU478UPee1ZoP-28" target="fCaCkwcuU478UPee1ZoP-30" edge="1">
@@ -179,7 +179,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="$$a_k=arrB[k]-arrB[k-1]*c\\&lt;br&gt;arrA.append(a_k)\\&lt;br&gt;k=k+1$$" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                <mxCell id="24" value="$$a_k=arrB[k]-arrB[k-1]\times c\\&lt;br&gt;arrA.append(a_k)\\&lt;br&gt;k=k+1$$" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1320" y="535" width="220" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="32" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="28" target="17" edge="1">
@@ -207,7 +207,7 @@
                 <mxCell id="39" value="hoocner_nhan" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="690" y="10" width="160" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="&lt;span&gt;Thuật toán Lagrange&lt;/span&gt;&lt;br&gt;&lt;span&gt;$$P_n(x)=\sum_{i=0}^n\left(\frac{y_i}{D_i}.\frac{w_{n+1}(x)}{x-x_i}\right)$$&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+                <mxCell id="40" value="&lt;span&gt;Thuật toán Lagrange&lt;/span&gt;&lt;br&gt;&lt;span&gt;$$P_n(x)=\sum_{i=0}^n\left(\frac{y_i}{D_i}\times\frac{w_{n+1}(x)}{x-x_i}\right)$$&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="10" y="20" width="210" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="hoocner_chia" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
@@ -256,7 +256,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="54" value="$$b_k=arrA[k]+arrB[k-1]*c\\&lt;br&gt;arrB.append(b_k)$$" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="54" value="$$b_k=arrA[k]+arrB[k-1]\times c\\&lt;br&gt;arrB.append(b_k)$$" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1645" y="690" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="58" target="fCaCkwcuU478UPee1ZoP-36" edge="1">
@@ -270,17 +270,6 @@
                 </mxCell>
                 <mxCell id="59" value="$$arrB.pop(-1)$$" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1855" y="570" width="105" height="60" as="geometry"/>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
-    <diagram id="wGTELboqJw2a5Z8wlcxF" name="Aiken">
-        <mxGraphModel dx="645" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-            <root>
-                <mxCell id="wiJsNIMB7TwiXxeVUZBy-0"/>
-                <mxCell id="wiJsNIMB7TwiXxeVUZBy-1" parent="wiJsNIMB7TwiXxeVUZBy-0"/>
-                <mxCell id="ky5ZWaG3Syq9VodCEGDr-0" value="thuật toán aiken&lt;br&gt;tính giá trị của đa thức nội suy lagrange không thông qua đa thức rút gọn" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="wiJsNIMB7TwiXxeVUZBy-1">
-                    <mxGeometry x="50" y="20" width="160" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

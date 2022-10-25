@@ -85,7 +85,22 @@ class Lagrange:
 
   #tinh P_n(c)
   def aiken(self, c):
-    pass
+    w = 1
+    #tich duong cheo
+    for x_i in self.x:
+      w *= (c - x_i)
+    #tich theo hang
+    sum = 0
+    for i in range(len(self.x)):
+      E_i = 1
+      for j in range(len(self.x)):
+        if i == j:
+          E_i *= (c - self.x[i])
+        else:
+          E_i *= (self.x[i] - self.x[j])
+      sum += (self.y[i] / E_i)
+
+    return w * sum #P_n(c)
   
   def draw_graph(self):
     x = np.array(self.x)
@@ -100,8 +115,9 @@ class Lagrange:
   #main
   def run(self):
     self.read_file()
-    self.lagrange()
-    self.draw_graph()
+    # self.lagrange()
+    print(self.aiken(4))
+    # self.draw_graph()
 
 #--------------------main--------------------
 if __name__ == '__main__':
