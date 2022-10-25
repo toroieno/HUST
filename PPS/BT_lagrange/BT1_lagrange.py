@@ -65,7 +65,7 @@ class Lagrange:
       arrB.append(b_k)
 
     arrB.pop(-1)
-    print(arrB)
+    # print(arrB)
     return arrB
 
   #tinh P_n(x)
@@ -80,6 +80,10 @@ class Lagrange:
         self.w_n[j] += w[j]
 
     print(self.w_n)
+
+  #tinh P_n(c)
+  def aiken(self):
+    pass
   
   def draw_graph(self):
     x = np.array(self.x)
