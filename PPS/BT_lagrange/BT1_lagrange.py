@@ -21,9 +21,9 @@ class Lagrange:
   #tinh ham f(x) bac n
   def f(self, x, coeff):
     y = 0
-    leng = len(coeff)
-    for i in range(leng):
-      y += coeff[i] * x ** (leng - i - 1)
+    length = len(coeff)
+    for i in range(length):
+      y += coeff[i] * x ** (length - i - 1)
 
     return y
 
@@ -115,9 +115,9 @@ class Lagrange:
   #main
   def run(self):
     self.read_file()
-    # self.lagrange()
+    self.lagrange()
     print(self.aiken(4))
-    # self.draw_graph()
+    self.draw_graph()
 
 #--------------------main--------------------
 if __name__ == '__main__':
