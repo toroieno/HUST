@@ -76,14 +76,14 @@ class Newton:
     xpoints = np.linspace(min(self.x) - .5, max(self.x) + .5, 1000)
     ypoints = [f.subs(Symbol('x'), xt) for xt in xpoints]
     plt.plot(xpoints, ypoints)
-    # plt.savefig('graph.png')
-    plt.show()
+    plt.savefig('graph.png')
+    # plt.show()
   #main
   def run(self):
     self.read_file()
     # f, value = self.newton_moc_bat_ky(4)
     # print(simplify(f))
-    # print('{:.2f}'.format(value))
+    # # print('{:.2f}'.format(value))
     # self.draw_graph(f)
     print(self.bang_ty_hieu())
 

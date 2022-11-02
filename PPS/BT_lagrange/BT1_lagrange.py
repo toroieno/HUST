@@ -109,8 +109,8 @@ class Lagrange:
     plt.scatter(x, y)
     xpoints = np.linspace(self.x[0]-0.5, self.x[len(self.w_n) - 1] + 0.5, 1000)
     plt.plot(xpoints, self.f(xpoints, self.w_n))
-    # plt.savefig("mygraph.png")
-    plt.show()
+    plt.savefig("mygraph.png")
+    # plt.show()
     
   #main
   def run(self):
