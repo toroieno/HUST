@@ -1,0 +1,50 @@
+% Yêu cầu chức năng (Function requiment): mô tả các chức năng mà phần mềm hệ thống cung cấp
+% Yêu cầu phi chức năng (Non-Function requiment): mô tả các ràng buộc đặt lên dịch vụ và quá trình phát triển hệ thống (về chất lượng, về môi trường, chuẩn sử dụng, qui trình phát triển)
+\chapter{Khảo sát hệ thống}
+Mỗi năm trường đại học Bách khoa Hà Nội tuyển sinh khoảng gần 8000 sinh viên (số liệu năm 2022 ), với nhu cầu phục vụ các sinh viên một cách đầy đủ nhất\\
+Công tác quản lý sinh viên (kết quả học tập) của sinh viên đóng vai trò hết sức quan trọng đối với hoạt động của một khoa trong các trường đại học.
+% \section{Hệ thống cũ}
+
+% \section{Yêu cầu hệ thống mới}
+% Hệ thống có thể phục vụ lượng lớn khoảng 2000
+% % (150*16) 
+% sinh viên các khoa(viện) cùng lúc, có các chức năng như:
+% \begin{itemize}
+% 	\item Thể hiện được mô hình tổ chức sinh viên theo khoá, theo lớp, các ngành đào tạo
+% 	\item Quản lý điểm (CPA) cập nhật qua các học kì
+% 	\item Hệ thống có thể xuất ra các báo cáo thống kê tình trạng học tập sinh viên dựa trên số điểm (CPA), số tín chỉ nợ, đưa ra mức cảnh cáo
+% 	\item Hệ thống có chức năng đăng ký form đồ án, thực tập
+% 	\item Tìm kiếm vị trí thực tập về các mảng cụ thể, có thông tin liên hệ với giảng viên, doanh nghiệp.
+% \end{itemize}
+\section{Yêu cầu chung đối với phần mềm}
+\subsection{Yêu cầu người sử dụng}
+\begin{itemize}
+  \item[-] \textit{Các chức năng của phần mềm:} phải tuân theo quy chế, quy trình đào tạo của trường đại học Bách khoa Hà Nội.
+  \item[-] \textit{Phần mềm phải có giao diện thân thiện:} để mọi người đều có thể sử dụng được, không nhất thiết phải là người trong ngành công nghệ thông tin.
+  \item[-] \textit{Hệ thống phải dễ sử dụng, quản lý:} đảm bảo tốt cho việc sử dụng phần mềm để quản lý cũng như tra cứu cùng thời điểm với số lượng lớn người sử dụng.
+  \item[-] \textit{Hệ thống phải có khả năng bảo mật tốt:} tất cả mọi thông tin cá nhân chỉ có người được phân quyền mới được phép xem và chỉnh sửa.
+  \item[-] \textit{Hệ thống phải có chức năng phục hồi, sao lưu dữ liệu thường xuyên:} tránh tình trạng mất, hỏng, sai lệch dữ liệu.
+  \item[-] \textit{Hệ thống cần có khả năng mở rộng, nâng cấp trong tương lai:} để có thể thay đổi cho phù hợp với yêu cầu công tác quản lý.
+  \item[-] \textit{Chi phí cho hệ thống (phần mềm, phần cứng, nhân sự vận hành) phải hợp lý:} không vượt quá ngân sách của trường nhưng vẫn đáp ứng được yêu cầu công việc. 
+\end{itemize}
+\subsection{Yêu cầu hệ thống}
+\textbf{Yêu cầu chức năng}:
+\begin{itemize}
+  \item Chức năng quản lý hệ thống: cho phép người quản trị hệ thống có thể quản lý người sử dụng, phân quyền, quản lý danh mục và vận hành hệ thống.
+  \item Chức năng quản lý thông tin: cho phép các bộ phận, phòng ban thực hiện cập nhật và quản lý thông tin của các sinh viên viện mình.
+  \item Chức năng tra cứu thông tin: cho phép người truy cập hệ thống có thể xem các thông tin mà đã được người quản trị phân quyền cho mình.
+\end{itemize}
+\textbf{Yêu cầu phi chức năng:}
+\begin{itemize}
+  \item Giao diện thân thiện, dễ sử dụng.
+  \item Truy xuất dữ liệu nhanh, lưu trữ dữ liệu tốt.
+  \item Tìm kiếm nhanh, thuận tiện.
+  \item Hệ thống bảo mật cao.
+  \item Đáp ứng được các yêu cầu nghiệp vụ.
+\end{itemize}
+\textbf{Yêu cầu miền ứng dụng:}
+\begin{itemize}
+  \item Chạy được trên các hệ điều hành khác nhau.
+  \item Hệ quản trị cơ sở dữ liệu tập trung(SQL server)
+  \item Giao diện thiết kế theo một chuẩn nhất định.
+\end{itemize}
