@@ -15,10 +15,28 @@ class Newton:
         arr = each.split(" ")
         self.x.append(float(arr[0]))
         self.y.append(float(arr[1]))
+      #khoang cach deu cac moc
+      self.h = self.x[1] - self.x[0]
     except:
       print('Open file error!')
     finally:
       f.close()
+
+  #tinh giai thua
+  def factorial(self, n):
+    if n == 0:
+      return 1
+    return n * self.factorial(n-1)
+
+  def delta(self, k, hat):
+    if hat == 1:
+      return self.y[k+1] - self.y[k]
+    return self.delta(k+1, hat-1) - self.delta(k, hat-1)
+
+  #tinh ty sai phan y[x_i,x_j]
+  def ty_sai_phan(self, begin, end):
+    hat = end - begin + 1
+    return self.delta(begin, hat-1) / (self.factorial(hat-1) * pow(self.h, hat))
 
   def newton_cach_deu(self):
     pass
@@ -36,6 +54,8 @@ class Newton:
   #main
   def run(self):
     self.read_file()
+    print(self.ty_sai_phan(0, 2))
+    print('fac:', self.factorial(5))
 
 #-----------------main--------------
 if __name__ == '__main__':

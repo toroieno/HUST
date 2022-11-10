@@ -29,6 +29,7 @@ class Newton:
   # bang ty hieu
   def bang_ty_hieu(self):
     l = len(self.x)
+    # BTH = np.zeros([l, l]).tolist()
     BTH = np.zeros([l, l])
     #khoi tao ty sai phan
     for i in range(l):
@@ -41,8 +42,23 @@ class Newton:
     return BTH
 
   #them moc moi
-  def add_new_point(self, x, y):
-    pass
+  def add_new_point(self, x, y, BTH):
+    # BTH = BTH.astype(object)
+    BTH[0].append(0)
+    print(BTH[0])
+    # bth = np.append(BTH[0], 0)
+    # BTH[0] = bth
+    # print(BTH[0])
+    # BTH[0].append(0)
+    # BTH = [bth.append(0) for bth in BTH]
+    # len_bth = len(BTH)
+    # new_row = np.zeros(len(BTH[0]))
+    # new_row[0] = x
+    # new_row[1] = y
+    # for i in range(2, len(new_row)):
+    #   new_row[i] = (y - BTH[-1][0]) / (x - self.x[len_bth + 1 - i])
+
+    # BTH.append(new_row)
 
   def newton_moc_bat_ky(self, x0):
     x = Symbol('x')
@@ -85,7 +101,13 @@ class Newton:
     # print(simplify(f))
     # # print('{:.2f}'.format(value))
     # self.draw_graph(f)
-    print(self.bang_ty_hieu())
+    # print(self.bang_ty_hieu())
+    BTH = self.bang_ty_hieu()
+    print(BTH)
+    print(self.ty_sai_phan(0, 2))
+    # self.add_new_point(7, 10 , BTH)
+    # print(BTH)
+
 
 #-----------------main--------------
 if __name__ == '__main__':
