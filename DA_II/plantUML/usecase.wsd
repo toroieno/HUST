@@ -1,0 +1,38 @@
+@startuml usecase
+
+left to right direction
+actor "Sinh vien" as sv
+actor "Giang vien" as gv
+actor "Giao vu" as giv
+actor "Truong phong" as tp
+
+rectangle System {
+  usecase "Login" as lg 
+  usecase "Dang nhap" as dn 
+  usecase "Dang ky" as dk 
+  usecase "Dang xuat" as dx 
+  lg --> dn
+  lg --> dk 
+  lg --> dx
+
+  usecase "Cap nhat thong tin" as update
+  usecase "Thong ke" as prop 
+  usecase "Dang ky do an" as register
+  usecase "Dang ky thuc tap" as logwork
+  usecase "Tao CV" as CV
+}
+giv --> lg
+giv --> prop
+
+gv --> lg
+gv --> prop
+
+sv --> lg
+sv --> update
+sv --> register
+sv --> logwork
+sv --> CV
+
+actor "Admin" as ad
+lg <-- ad
+@enduml

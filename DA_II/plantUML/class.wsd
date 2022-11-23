@@ -1,0 +1,14 @@
+@startuml class
+class A {
+  {static} string id
+  # protected
+  + public 
+  - private 
+  void function()
+  {abstract} void method()
+}
+class B {
+
+}
+A "1" *-- "many" B : contain
+@enduml

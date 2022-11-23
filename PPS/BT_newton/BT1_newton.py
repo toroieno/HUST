@@ -105,6 +105,8 @@ class Newton:
     BTH = self.bang_ty_hieu()
     print(BTH)
     print(self.ty_sai_phan(0, 2))
+    f, value = self.newton_moc_bat_ky(18.5)
+    print('value: ', value)
     # self.add_new_point(7, 10 , BTH)
     # print(BTH)
 
