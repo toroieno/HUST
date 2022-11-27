@@ -1,6 +1,7 @@
 from math import *
 
 def g(x):
+  # return 3 * x**3 + 2 * x**2 - 3*x + 3
   return 2 * x**2 - 3*x + 3
   # return sin(x)
   # return x**2
@@ -19,4 +20,4 @@ def write_file(a, b):
 
 
 if __name__ == '__main__':
-  write_file(1,6)
+  write_file(1,10)
