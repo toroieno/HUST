@@ -116,8 +116,8 @@ class Stirling:
                 p[-i-1] += s_even[len(s_even) - i - 1]
             print('even: ', s_even)
 
-        print(p)
-        print(self.hoocne_divive(p, self.t(2.5, 3, 1)).pop())
+        print(self.x[middle])
+        print(self.hoocne_divive(p, self.t(5.5, self.x[middle], 1)).pop())
 
     def t(self, x, x0, h):
         return -(x - x0) / h

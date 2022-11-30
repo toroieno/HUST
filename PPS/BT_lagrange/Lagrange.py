@@ -43,6 +43,7 @@ class Lagrange:
             b.append(float(b_k))
         return b
 
+    #tính đạo hàm bậc k của f(x)
     def Degf_k(self, arr, k, c):
         factorial = 1
         for i in range(1, k + 1):
@@ -68,7 +69,7 @@ class Lagrange:
             temp_arr = [temp_arr[k] * y_D_i for k in range(len(temp_arr))]
             summary = [summary[j] + temp_arr[j] for j in range(len(temp_arr))]
         summary.pop()
-        summary = [round(summary[i]) for i in range(len(summary))]
+        # summary = [round(summary[i]) for i in range(len(summary))]
         return summary
 
     def f_lagrange(self, arr, x):
@@ -76,9 +77,9 @@ class Lagrange:
 
     def run(self):
         self.read_file("input.txt")
-        # print(self.lagrange())
-        print(self.Degf_k(self.lagrange(), 3, 2.7))
-        # print(self.f_lagrange(self.lagrange(), 2))
+        print(self.lagrange())
+        # print(self.Degf_k(self.lagrange(), 3, 2.7))
+        print(self.f_lagrange(self.lagrange(), 3.5))
 
 
 if __name__ == "__main__":
