@@ -27,6 +27,8 @@ giv --> prop
 gv --> lg
 gv --> prop
 
+tp --> lg
+
 sv --> lg
 sv --> update
 sv --> register

@@ -1,0 +1,17 @@
+@startuml activity
+
+(*) --> "Nhập thông tin"
+    ' --> "Kiểm tra thông tin"
+
+if "Kiểm tra thông tin" then
+  -left->[true] "Vào giao diện chính"
+  -right-> (*)
+else 
+  if "false" then 
+    -left->[Nhập lại] "Nhập thông tin"
+  else
+    -left->[Huỷ bỏ] (*)
+  endif
+endif
+
+@enduml

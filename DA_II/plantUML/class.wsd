@@ -1,14 +1,86 @@
 @startuml class
-class A {
-  {static} string id
-  # protected
-  + public 
-  - private 
-  void function()
-  {abstract} void method()
+class SinhVien {
+  +maSinhVien
+  #tenSinhVien
+  #ngaySinh
+  #gioiTinh
+  #diaChi
+  #maLop
 }
-class B {
+class ThongTinHocTap {
+  #maSinhVien
+  #diemCPA
+  thongKe(): void
+}
+class HeDaoTao {
+  +maHeDaoTao
+  +tenHeDaoTao
+}
+class KhoaHoc {
+  +maKhoaHoc
+  +tenKhoaHoc
+}
+class NganhDaoTao {
+  +maNganh
+  +tenNganh
+}
+SinhVien -- ThongTinHocTap
+SinhVien "n" -- "1" HeDaoTao
+SinhVien "n" -- "1" KhoaHoc
+SinhVien "n" -- "1" NganhDaoTao
+
+class GiangVien {
+  #maGiangVien
+  #tenGiangVien
+  #gioiTinh
+  #chuyenNganh
+}
+GiangVien -- ThongTinHocTap
+GiangVien "1" -- "n" LopHoc
+
+class GiangVienBoMon {
+  #maGiangVien
+  #tenGiangVien
+  #gioiTinh
+  #chuyenNganh
+}
+class LopHoc {
+  #maLop
+  #tenLop
+  #soLuong
+  #maKhoaHoc
+  #maNganh
+  #maGiangVien
+}
+
+class TruongPhong {
+  #maTruongPhong
+  #tenTruongPhong
+  #ngaySinh
 
 }
-A "1" *-- "many" B : contain
+class GiaoVu {
+  #maGiaoVu
+  #tenGiaoVu
+  #ngaySinh
+
+}
+class Admin {
+
+}
+class FormDangKy {
+  #maForm
+  #maLoaiForm
+  thongKe(): void
+}
+FormDangKy -- SinhVien
+FormDangKy -- TruongPhong
+
+GiaoVu -- SinhVien: manage
+GiaoVu -- GiangVien
+GiaoVu -- FormDangKy
+SinhVien "n" -- "1" LopHoc
+
+GiangVien <|-- GiangVienBoMon
+GiangVien <|-- Giang
 @enduml
