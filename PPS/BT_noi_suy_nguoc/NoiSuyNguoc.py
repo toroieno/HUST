@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 from math import *
 
@@ -69,7 +70,7 @@ class ReverseInterpolation:
     #nội suy ngược các mốc y_i không đều nhau
     def ns_nguoc_lagrange(self):
         w = self.hoocne_multiply(self.y)
-        print(w)
+        # print(w)
         summary = np.zeros(len(w))
         for i in range(len(self.y)):
             temp_arr = self.hoocne_divive(w, self.y[i])
@@ -78,21 +79,31 @@ class ReverseInterpolation:
             summary = [summary[j] + temp_arr[j] for j in range(len(temp_arr))]
         summary.pop()
         # summary = [round(summary[i]) for i in range(len(summary))]
-        print(summary)
+        # print(summary)
         return summary
 
+    #tính tích t(t-1)(t-2)...
+    def multi_t(self, t, k):
+        if k == 0:
+            return t
+        return self.multi_t(t, k-1) * (t - k)
     #trường hợp các mốc cách đều
     def ns_moc_cach_deu(self, y_):
-        delta_1 = self.delta_y(0, 1)
-        t0 = (y_ - self.y[0]) / delta_1
-        delta_2 = self.delta_y(0, 2)
-        print(delta_1)
-        print(delta_2)
-        print('t', t0)
-        k = 100
+        delta_0 = self.delta_y(0, 1)
+        t0 = (y_ - self.y[0]) / delta_0
+        # delta_2 = self.delta_y(0, 2)
+        # print(delta_0)
+        # print(delta_2)
+        # print('t', t0)
+        k = 100 # số lần lặp giới hạn
         t_k = t0
         while k > 0:
-            t_temp = t0 - (delta_2 / (2 * delta_1)) * t_k * (t_k - 1)
+            sum_ = 0
+            for i in range(2, len(self.x)):
+                t = self.multi_t(t_k, i-1)
+                delta_i = self.delta_y(0, i) / (delta_0 * self.factorial(i))
+                sum_ += delta_i * t
+            t_temp = t0 - sum_ 
             if abs(t_temp - t_k) < 10e-4:
                 t_k = t_temp
                 break
@@ -102,11 +113,24 @@ class ReverseInterpolation:
             return 'no'
         return self.x[0] + self.h * t_k
 
+    def draw_graph(self):
+        x = np.array(self.x)
+        y = np.array(self.y)
+
+        plt.scatter(x, y)
+        p = self.ns_nguoc_lagrange()
+        xpoints = np.linspace(self.x[0]-0.5, self.x[len(p) - 1] + 0.5, 100)
+        ypoints = [self.f_(p, xpoint) for xpoint in xpoints]
+        plt.plot(xpoints, ypoints)
+        # plt.savefig("mygraph.png")
+        # plt.show()
+
     def run(self):
         self.read_file("input.txt")
         coeff_lagrange = self.ns_nguoc_lagrange()
         print(self.f_(coeff_lagrange, 2))
         print(self.ns_moc_cach_deu(1.35))
+        # self.draw_graph()
 
 
 if __name__ == '__main__':
