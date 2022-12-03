@@ -1,0 +1,41 @@
+@startuml login
+
+actor       SinhVien       as A
+
+control     Control     as C
+entity      Service     as S
+database    Database    as D
+
+A -> C : yêu cầu đăng nhập
+activate C
+
+C -> S : gọi hàm đăng nhập
+activate S
+
+C --> A : yêu cầu tài khoản, mật khẩu
+A -> S : nhập tài khoản, mật khẩu
+
+S -> D : kiểm tra tài khoản user
+activate D
+
+alt không tìm thấy tài khoản
+  D --> S : không tìm thấy
+  S --> C : return
+  C --> A : thông báo sai thông tin
+
+else tìm thấy tài khoản
+  D --> S : tìm thấy tài khoản
+  deactivate D
+  alt tài khoản hợp lệ
+  S --> C : tài khoản hợp lệ
+  C --> A : đăng nhập thành công
+  else tài khoản không hợp lệ
+  S --> C : tài khoản không hợp lệ
+  deactivate S
+  C --> A : đăng nhập thất bại
+  deactivate C
+  end
+end
+
+@enduml
+

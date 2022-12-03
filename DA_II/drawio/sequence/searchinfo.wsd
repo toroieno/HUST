@@ -1,0 +1,12 @@
+@startuml login
+
+actor       SinhVien    as A
+boundary    Boundary    as B
+control     Control     as C
+entity      Service     as S
+database    Database    as D
+
+A -> C : 
+
+@enduml
+

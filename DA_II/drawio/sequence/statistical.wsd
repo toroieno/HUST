@@ -1,0 +1,13 @@
+@startuml statistical
+
+actor       SinhVien   as A
+boundary    Boundary    as Foo2
+control     Control     as C
+entity      Entity      as Foo4
+database    Database    as D
+collections Collections as Foo6
+
+A -> C : something
+
+@enduml
+

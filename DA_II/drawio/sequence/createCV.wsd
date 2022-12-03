@@ -1,0 +1,36 @@
+@startuml login
+
+actor       SinhVien    as A
+boundary    Boundary    as B
+control     Control     as C
+entity      Service     as S
+database    Database    as D
+
+A -> C : yêu cầu tạo CV
+activate C
+C -> S : gọi hàm tạo CV
+activate S
+S -> D : lấy dữ liệu người dùng
+activate D
+D --> C : dữ liệu người dùng
+C --> B : return
+activate B
+B --> A : form thông tin
+A -> B : điền thông tin cá nhân
+B -> C : thông tin
+deactivate B
+C -> S : kiểm tra trường thông tin
+alt trường thông tin hợp lệ
+  S -> D : lưu thông tin
+  deactivate D
+  S --> C : trả về file word
+  C --> A : return
+else trường thông tin không hợp lệ
+  S --> C : 
+  deactivate S
+  C --> A : thông báo 
+  deactivate C
+end
+
+@enduml
+

@@ -1,0 +1,23 @@
+@startuml logout
+
+actor       SinhVien       as A
+
+control     Control     as C
+entity    Service    as D
+
+A -> C : yêu cầu đăng xuất
+activate C
+
+C -> D : gọi hàm đăng xuất
+activate D
+
+D --> C : return
+deactivate D
+
+C --> A : đăng xuất thành công
+deactivate C
+
+
+
+@enduml
+

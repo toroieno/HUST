@@ -1,0 +1,44 @@
+@startuml login
+
+actor       SinhVien       as A
+
+control     Control     as C
+entity      Service     as S
+database    Database    as D
+
+A -> C : yêu cầu cập nhật thông tin
+activate C
+
+C -> S : gọi hàm cập nhật thông tin
+activate S
+
+C --> A : hiển thị thông tin cũ
+A -> C : thông tin thay đổi
+C --> A : yêu cầu mật khẩu
+A -> C : nhập mật khẩu
+C -> S : mật khẩu
+
+S -> D : kiểm tra mật khẩu user
+activate D
+
+alt mật khẩu đúng
+  D --> S : mật khẩu đúng
+  S --> C : return
+  C -> S : thông tin cập nhật
+  S -> D : thông tin
+  D --> S : cập nhật thành công
+  S --> C : return
+  C --> A : thông báo cập nhật thành công
+
+else mật khẩu sai
+  D --> S : sai mật khẩu
+  deactivate D
+  S --> C : return
+  deactivate S
+  C --> A : thông báo sai mật khẩu, cập nhật thất bại
+  deactivate C
+  
+end
+
+@enduml
+
