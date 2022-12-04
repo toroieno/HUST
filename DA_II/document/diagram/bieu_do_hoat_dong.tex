@@ -1,54 +1,171 @@
 \section{Biểu đồ hoạt động}
 \subsection{Đăng nhập}
   \begin{center}
-    \includegraphics[width=1.1\textwidth]{image/activity/login.png}
-    \begin{figure}
+    \includegraphics[width=1.1\textwidth]{../drawio/activity/login.png}
+    \begin{figure}[h]
       \centering
-      \caption{Đăng nhập}
+      \caption{Biểu đồ đăng nhập}
     \end{figure}
   \end{center}
-  \begin{table}
-    \begin{tabular}{|c|c|}
-      
-    \end{tabular}
-  \end{table}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+    \hline
+    \textbf{Mô tả} & Đăng nhập\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+    \hline
+    \textbf{Luồng chính} & \makecell[l]{1. Chọn chức năng đăng nhập \\ 2. Hiển thị màn hình đăng nhập \\ 3. Nhập tên đăng nhập và mật khẩu \\ 4. Hiển thị kiểm tra thông tin \\ 5. Nếu thành công chuyển tới giao diện chính \\ 6. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & \makecell[l]{Mật khẩu không hợp lệ: \\ 1. Thông báo ra màn hình mật khẩu sai \\ 2. Quay lại bước 2 của luồng chính \\ Quên mật khẩu: \\ 1. Hiển thị màn hình nhập email \\ 2. Nhập và chọn chức năng quên mật khẩu \\ 3. Kiểm tra hợp lệ hệ thống gửi mail xác nhận \\ 4. Hiển thị thông báo thành công \\ 5. Kết thúc} \\
+    \hline
+    \textbf{Tiền điều kiện} & Tài khoản trước đó đã được đăng ký \\
+    \hline
+    \textbf{Hậu điều kiện} & Người dùng đăng nhập thành công \\
+    \hline
+    \textbf{Các yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
 
 \subsection{Đăng ký}
   \begin{center}
-    \includegraphics[width=1.1\textwidth]{image/activity/logup.png}
-    \begin{figure}
+    \includegraphics[width=1.1\textwidth]{../drawio/activity/logup.png}
+    \begin{figure}[h]
       \centering
-      \caption{Đăng nhập}
+      \caption{Biểu đồ đăng ký}
     \end{figure}
   \end{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, sinh viên, giảng viên \\
+    \hline
+    \textbf{Mô tả} & Đăng ký\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng ký" trên thanh menu \\
+    \hline 
+    \textbf{Luồn chính} & \makecell[l]{Trường hợp bắt đầu khi người truy cập muốn đăng ký tài khoản mới: \\ 1. Chọn chức năng đăng ký \\ 2. Màn hình hiển thị form đăng ký \\ 3. Hệ thống nhận các thông tin, thực hiện validate \\ 4. Thông báo đăng ký thành công \\ 5. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & \makecell[l]{Đăng ký thất bại: \\ - Thông tin đăng ký không hợp lệ \\ - Email đã được đăng ký} \\
+    \hline
+    \textbf{Tiền điều kiện} & Người dùng trước đó đã đăng nhập \\
+    \hline
+    \textbf{Hậu điều kiện} & Người dùng đăng xuất thành công \\
+    \hline
+    \textbf{Yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
 
 \subsection{Đăng xuất}
   \begin{center}
-    \includegraphics[width=1.1\textwidth]{image/activity/logout.png}
-    \begin{figure}
+    \includegraphics[width=.7\textwidth]{../drawio/activity/logout.png}
+    \begin{figure}[h]
       \centering
-      \caption{Đăng nhập}
+      \caption{Biểu đồ đăng xuất}
     \end{figure}
   \end{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+    \hline
+    \textbf{Mô tả} & Đăng xuất\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng xuất" trên thanh menu \\
+    \hline 
+    \textbf{Luồn chính} & \makecell[l]{Trường hợp bắt đầu khi người truy cập muốn đăng xuất khỏi hệ thống: \\ 1. Chọn chức năng đăng xuất \\ 2. Màn hình hiển thị thông báo xác nhận muốn đăng xuất \\ 3. Thông báo đăng xuất thành công \\ 4. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & Không có \\
+    \hline
+    \textbf{Tiền điều kiện} & Người dùng trước đó đã đăng nhập \\
+    \hline
+    \textbf{Hậu điều kiện} & Người dùng đăng xuất thành công \\
+    \hline
+    \textbf{Các yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
 
 \subsection{Quên mật khẩu}
   \begin{center}
-    \includegraphics[width=1.1\textwidth]{image/activity/login.png}
-    \begin{figure}
+    \includegraphics[width=.7\textwidth]{../drawio/activity/forgot_password.png}
+    \begin{figure}[h]
       \centering
-      \caption{Đăng nhập}
+      \caption{Biểu đồ quên mật khẩu}
     \end{figure}
   \end{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, sinh viên, giảng viên\\
+    \hline
+    \textbf{Mô tả} & Quên mật khẩu\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng nhấn vào nút "Quên mật khẩu" trên thanh menu \\
+    \hline 
+    \textbf{Luồn chính} & \makecell[l]{1. Người dùng chọn chức năng quên mật khẩu \\ 2. Hệ thống tiếp nhận thông tin email \\ 3. Hệ thống kiểm tra email \\ 4. Hệ thống thông báo mật khẩu mới được gửi qua email \\ 5. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & \makecell[l]{Thông tin email không hợp lệ: \\ 1. Thông báo thông tin email không đúng \\ 2. Trở lại màn hình nhập email \\ 3. Kết thúc} \\
+    \hline
+    \textbf{Tiền điều kiện} & email trước đó đã được dùng để đăng ký tài khoản \\
+    \hline
+    \textbf{Hậu điều kiện} & mật khẩu mới của tài khoản email xác nhận\\
+    \hline
+    \textbf{Các yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
+
 \subsection{Cập nhật thông tin}
   \begin{center}
-    \includegraphics[width=1.1\textwidth]{image/activity/updatedata.png}
-    \begin{figure}
+    \includegraphics[width=1.1\textwidth]{../drawio/activity/updatedata.png}
+    \begin{figure}[h]
       \centering
-      \caption{Đăng nhập}
+      \caption{Biểu đồ cập nhật thông tin}
     \end{figure}
   \end{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, sinh viên, giảng viên\\
+    \hline
+    \textbf{Mô tả} & Cập nhật thông tin cá nhân của người dùng, điểm của sinh viên, thông tin đồ án giảng viên\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng vào trang cá nhân và chọn chức năng "cập nhật thông tin" \\
+    \hline 
+    \textbf{Luồn chính} & \makecell[l]{1. Người dùng chọn chức năng cập nhật thông tin \\ 2. Hệ thống tiếp nhận thông tin cập nhật \\ 3. Hệ thống yêu cầu xác nhận mật khẩu \\ 4. Hệ thống kiểm tra mật khẩu \\ 5. Hệ thống thông báo cập nhật thành công \\ 6. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & Không có \\
+    \hline
+    \textbf{Tiền điều kiện} & người dùng đã đăng nhập \\
+    \hline
+    \textbf{Hậu điều kiện} & cập nhật thông tin thành công\\
+    \hline
+    \textbf{Các yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
 
-\subsection{Thống kê}
+\subsection{Thống kê} 
+  \begin{center}
+    \includegraphics[width=.3\textwidth]{../drawio/activity/statistical.png}
+    \begin{figure}[h]
+      \centering
+      \caption{Biểu đồ thống kê}
+    \end{figure}
+  \end{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Các tác nhân} & Admin, giảng viên, giáo vụ, trưởng phòng \\
+    \hline
+    \textbf{Mô tả} & Thống kê các thông tin: điểm CPA, số tín chỉ nợ, mức cảnh báo của các sinh viên; số lượng đăng ký đồ án; số lượng đăng ký thực tập\\
+    \hline
+    \textbf{Kích hoạt} & Người dùng chọn chức năng thống kê trên hệ thống \\
+    \hline 
+    \textbf{Luồn chính} & \makecell[l]{1. Hệ thống tiếp nhận yêu cầu thống kê \\ 2. Hệ thống lấy dữ liệu \\ 3. Hệ thống hiển thị biểu đồ thống kê \\ 4. Kết thúc} \\
+    \hline
+    \textbf{Các luồng thay thế} & Không có \\
+    \hline
+    \textbf{Tiền điều kiện} & Người dùng đã đăng nhập trước đó \\
+    \hline
+    \textbf{Hậu điều kiện} & \\
+    \hline
+    \textbf{Các yêu cầu đặc biệt} & \\
+    \hline
+  \end{tabular}
 
 \subsection{Đăng ký đồ án}
   \begin{center}
@@ -58,8 +175,46 @@
       \caption{Đăng nhập}
     \end{figure}
   \end{center}
+  \begin{table}
+    \begin{tabular}{|l|l|}
+      \hline
+      \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+      \hline
+      \textbf{Mô tả} & Đăng nhập\\
+      \hline
+      \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+      \hline 
+      \textbf{Luồn chính} & \makecell[l]{-Tên đăng nhập \\ -Mật khẩu} \\
+      \hline
+      \textbf{Các luồng thay thế} & 6 \\
+      \hline
+      \textbf{Tiền điều kiện} & 7 \\
+      \hline
+      \textbf{Hậu điều kiện} & \\
+      \hline
+    \end{tabular}
+  \end{table}
 
 \subsection{Đăng ký thực tập}
+\begin{table}
+    \begin{tabular}{|l|l|}
+      \hline
+      \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+      \hline
+      \textbf{Mô tả} & Đăng nhập\\
+      \hline
+      \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+      \hline 
+      \textbf{Luồn chính} & \makecell[l]{-Tên đăng nhập \\ -Mật khẩu} \\
+      \hline
+      \textbf{Các luồng thay thế} & 6 \\
+      \hline
+      \textbf{Tiền điều kiện} & 7 \\
+      \hline
+      \textbf{Hậu điều kiện} & \\
+      \hline
+    \end{tabular}
+  \end{table}
 \subsection{Tạo CV}
   \begin{center}
     \includegraphics[width=1.1\textwidth]{image/activity/login.png}
@@ -68,6 +223,25 @@
       \caption{Đăng nhập}
     \end{figure}
   \end{center}
+  \begin{table}
+    \begin{tabular}{|l|l|}
+      \hline
+      \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+      \hline
+      \textbf{Mô tả} & Đăng nhập\\
+      \hline
+      \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+      \hline 
+      \textbf{Luồn chính} & \makecell[l]{-Tên đăng nhập \\ -Mật khẩu} \\
+      \hline
+      \textbf{Các luồng thay thế} & 6 \\
+      \hline
+      \textbf{Tiền điều kiện} & 7 \\
+      \hline
+      \textbf{Hậu điều kiện} & \\
+      \hline
+    \end{tabular}
+  \end{table}
 
 \subsection{Tra cứu thông tin}
   \begin{center}
@@ -77,3 +251,22 @@
       \caption{Đăng nhập}
     \end{figure}
   \end{center}
+  \begin{table}
+    \begin{tabular}{|l|l|}
+      \hline
+      \textbf{Các tác nhân} & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
+      \hline
+      \textbf{Mô tả} & Đăng nhập\\
+      \hline
+      \textbf{Kích hoạt} & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+      \hline 
+      \textbf{Luồn chính} & \makecell[l]{-Tên đăng nhập \\ -Mật khẩu} \\
+      \hline
+      \textbf{Các luồng thay thế} & 6 \\
+      \hline
+      \textbf{Tiền điều kiện} & 7 \\
+      \hline
+      \textbf{Hậu điều kiện} & \\
+      \hline
+    \end{tabular}
+  \end{table}
