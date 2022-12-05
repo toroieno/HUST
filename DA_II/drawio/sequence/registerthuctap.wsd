@@ -1,0 +1,25 @@
+@startuml rt
+
+actor       SinhVien   as A
+control     Control     as C
+entity      Service      as S
+database    Database    as D
+
+A -> C : yêu cầu đăng ký thực tập
+activate C
+C -> S : gọi hàm đăng ký
+activate S
+C --> A : Form điền thông tin
+A -> C : thông tin đăng ký
+C -> S : kiểm tra thông tin
+S -> D : tìm kiếm thông tin
+activate D
+D --> S : trả về thông tin phù hợp
+deactivate D
+S --> C : return
+deactivate S
+C --> A : thông tin công ty, vị trí thực tập
+deactivate C
+
+@enduml
+

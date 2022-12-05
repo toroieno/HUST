@@ -1,4 +1,4 @@
-@startuml login
+@startuml ui
 
 actor       SinhVien       as A
 

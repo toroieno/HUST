@@ -1,12 +1,22 @@
-@startuml login
+@startuml si
 
-actor       SinhVien    as A
-boundary    Boundary    as B
+actor       User    as A
 control     Control     as C
 entity      Service     as S
 database    Database    as D
 
-A -> C : 
+A -> C : yêu cầu thông tin
+activate C
+C -> S : gọi hàm tìm kiếm thông tin
+activate S
+S -> D : tìm kiếm thông tin
+activate D
+D --> S : trả về thông tin khớp
+deactivate D
+S --> C : return
+deactivate S
+C --> A : hiển thị thông tin tìm kiếm
+deactivate C
 
 @enduml
 

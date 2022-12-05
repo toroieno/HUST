@@ -1,13 +1,22 @@
 @startuml statistical
 
 actor       SinhVien   as A
-boundary    Boundary    as Foo2
 control     Control     as C
-entity      Entity      as Foo4
+entity      Service      as S
 database    Database    as D
-collections Collections as Foo6
 
-A -> C : something
+A -> C : yêu cầu thống kê
+activate C
+C -> S : gọi hàm thống kê
+activate S
+S -> D : lấy dữ liệu
+activate D
+D --> S : return
+deactivate D
+S --> C : return
+deactivate S
+C --> A : biểu đồ dữ liệu
+deactivate C
 
 @enduml
 

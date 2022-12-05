@@ -1,0 +1,28 @@
+@startuml rd
+
+actor       SinhVien   as A
+control     Control     as C
+entity      Service      as S
+database    Database    as D
+
+A -> C : yêu cầu đăng ký đồ án
+activate C
+C -> S : gọi hàm đăng ký
+activate S
+C --> A : Form điền thông tin
+A -> C : thông tin đăng ký
+C -> S : kiểm tra thông tin
+alt thông tin hợp lệ
+S -> D : lưu thông tin
+S --> C : return
+C --> A : thông báo đăng ký thành công
+else thông tin không hợp lệ
+S --> C : return
+deactivate S
+C --> A : thông báo thông tin không hợp lệ
+deactivate C
+end
+
+
+@enduml
+

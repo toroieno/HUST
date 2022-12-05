@@ -1,0 +1,47 @@
+@startuml logup
+
+actor       SinhVien       as A
+
+control     Control     as C
+entity      Service     as S
+database    Database    as D
+
+A -> C : yêu cầu đăng ký
+activate C
+
+C -> S : gọi hàm đăng ký
+activate S
+
+C --> A : yêu cầu thông tin đăng ký
+A -> S : nhập thông tin đăng ký
+
+S -> D : kiểm tra email
+activate D
+
+alt email đã được đăng ký
+  D --> S : email đã tồn tại
+  S --> C : return
+  C --> A : thông báo email đã được đăng ký
+
+else email hợp lệ
+  D --> S : email hợp lệ
+  S --> C : return
+  C --> A : yêu cầu mã xác nhận
+  A -> C : nhập mã xác nhận
+  S -> D : kiểm tra mã
+  alt mã xác thực đúng
+  D --> S : mã hợp lệ
+  S --> C : return
+  C --> A : thông báo đăng ký thành công
+  else mã xác thực sai
+    D --> S : mã không hợp lệ
+    deactivate D
+    S --> C : return
+    deactivate S
+    C --> A : đăng ký thất bại
+    deactivate C
+  end
+end
+
+@enduml
+

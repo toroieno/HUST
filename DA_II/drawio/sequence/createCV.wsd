@@ -1,4 +1,4 @@
-@startuml login
+@startuml cv
 
 actor       SinhVien    as A
 boundary    Boundary    as B
@@ -26,7 +26,7 @@ alt trường thông tin hợp lệ
   S --> C : trả về file word
   C --> A : return
 else trường thông tin không hợp lệ
-  S --> C : 
+  S --> C : return
   deactivate S
   C --> A : thông báo 
   deactivate C
