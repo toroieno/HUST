@@ -1,5 +1,5 @@
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 class Lagrange:
 
@@ -75,11 +75,35 @@ class Lagrange:
     def f_lagrange(self, arr, x):
         return self.hoocne_divive(arr, x).pop()
 
+    #tinh ham f(x) bac n
+    def f(self, x, coeff):
+        y = 0
+        length = len(coeff)
+        for i in range(length):
+            y += coeff[i] * x ** (length - i - 1)
+
+        return y
+
+    def draw_graph(self):
+        x = np.array(self.x)
+        y = np.array(self.y)
+
+        plt.scatter(x, y, color="red")
+        xpoints = np.linspace(self.x[0]-0.5, self.x[-1] + 0.5, 1000)
+        # print('x', xpoints)
+        y_coeff = self.lagrange()
+        # print('y', y_coeff)
+        plt.plot(xpoints, self.f(xpoints, y_coeff))
+        # plt.plot(xpoints, self.f_lagrange(y_coeff, xpoints))
+        # plt.savefig("mygraph.png")
+        plt.show()
+
     def run(self):
         self.read_file("../input.txt")
         print(self.lagrange())
         # print(self.Degf_k(self.lagrange(), 3, 2.7))
         print(self.f_lagrange(self.lagrange(), 3.5))
+        self.draw_graph()
 
 
 if __name__ == "__main__":
