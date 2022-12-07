@@ -100,9 +100,12 @@ class Lagrange:
 
     def run(self):
         self.read_file("../input.txt")
+        # print(self.x)
+        # print(self.y)
         print(self.lagrange())
         # print(self.Degf_k(self.lagrange(), 3, 2.7))
-        print(self.f_lagrange(self.lagrange(), 3.5))
+        x = float(input('bạn muốn tính tại x = bnhiu: '))
+        print(self.f_lagrange(self.lagrange(), x))
         self.draw_graph()
 
 
