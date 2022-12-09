@@ -25,9 +25,9 @@ class NganhDaoTao {
   +tenNganh
 }
 SinhVien -- ThongTinHocTap
-SinhVien "n" -- "1" HeDaoTao
-SinhVien "n" -- "1" KhoaHoc
-SinhVien "n" -- "1" NganhDaoTao
+SinhVien -- HeDaoTao
+SinhVien -- KhoaHoc
+SinhVien -- NganhDaoTao
 
 class GiangVien {
   #maGiangVien
@@ -36,7 +36,7 @@ class GiangVien {
   #chuyenNganh
 }
 GiangVien -- ThongTinHocTap
-GiangVien "1" -- "n" LopHoc
+GiangVien -- LopHoc
 
 class GiangVienBoMon {
   #maGiangVien
@@ -65,9 +65,9 @@ class GiaoVu {
   #ngaySinh
 
 }
-class Admin {
+' class Admin {
 
-}
+' }
 class FormDangKy {
   #maForm
   #maLoaiForm
@@ -76,11 +76,11 @@ class FormDangKy {
 FormDangKy -- SinhVien
 FormDangKy -- TruongPhong
 
-GiaoVu -- SinhVien: manage
+GiaoVu -- SinhVien
 GiaoVu -- GiangVien
 GiaoVu -- FormDangKy
-SinhVien "n" -- "1" LopHoc
+SinhVien -- LopHoc
 
 GiangVien <|-- GiangVienBoMon
-GiangVien <|-- Giang
+
 @enduml
