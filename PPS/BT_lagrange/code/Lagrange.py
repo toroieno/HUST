@@ -14,7 +14,7 @@ class Lagrange:
         w = hoocne_multiply(self.x)
         summary = np.zeros(len(w))
         for i in range(len(self.x)):
-            temp_arr = hoocne_divive(w, self.x[i])
+            temp_arr = hoocne_divide(w, self.x[i])
             y_D_i = self.y[i] / D_i(self.x, i)
             temp_arr = [temp_arr[k] * y_D_i for k in range(len(temp_arr))]
             summary = [summary[j] + temp_arr[j] for j in range(len(temp_arr))]

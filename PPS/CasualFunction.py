@@ -38,7 +38,7 @@ def hoocne_multiply(arr):
     return a
 
 
-def hoocne_divive(arr, c):
+def hoocne_divide(arr, c):
     b = [arr[0]]
     for i in range(1, len(arr)):
         b_k = arr[i] + b[i - 1] * c  # b_k = a_k + b_k-1 * c
@@ -92,15 +92,15 @@ def factorial(n):
 
 # Tinh gia tri cua ham so f tai x
 def f_x(arr, x):
-    return hoocne_divive(arr, x).pop()
+    return hoocne_divide(arr, x).pop()
 
 
 # Tính giá trị đạo hàm bậc k của f(x) tai x
 def Degf_k(arr, k, x):
     for i in range(1, k + 1):
-        arr = hoocne_divive(arr, x)
+        arr = hoocne_divide(arr, x)
         arr.pop()  # lay dao ham nen bo gia tri cuoi di
-    res = hoocne_divive(arr, x).pop()  # lay gia tri tai x
+    res = hoocne_divide(arr, x).pop()  # lay gia tri tai x
     return factorial(k) * res
 
 # endregion

@@ -18,7 +18,7 @@ class ReverseInterpolation:
         # print(w)
         summary = np.zeros(len(w))
         for i in range(len(self.y)):
-            temp_arr = hoocne_divive(w, self.y[i])
+            temp_arr = hoocne_divide(w, self.y[i])
             y_D_i = self.x[i] / D_i(self.y, i)
             temp_arr = [temp_arr[k] * y_D_i for k in range(len(temp_arr))]
             summary = [summary[j] + temp_arr[j] for j in range(len(temp_arr))]
