@@ -30,13 +30,13 @@ class Lagrange:
         y = np.array(self.y)
 
         plt.scatter(x, y, color="red")
-        xpoints = np.linspace(self.x[0] - 0.5, self.x[-1] + 0.5, 1000)
-        # print('x', xpoints)
+        x_points = np.linspace(self.x[0] - 0.5, self.x[-1] + 0.5, 1000)
+        # print('x', x_points)
         y_coeff = self.lagrange()
         # print('y', y_coeff)
-        ypoints = [f_x(y_coeff, xpoint) for xpoint in xpoints]
-        plt.plot(xpoints, ypoints)
-        # plt.plot(xpoints, self.f_lagrange(y_coeff, xpoints))
+        ypoints = [f_x(y_coeff, xpoint) for xpoint in x_points]
+        plt.plot(x_points, ypoints)
+        # plt.plot(x_points, self.f_lagrange(y_coeff, x_points))
         # plt.savefig("mygraph.png")
         plt.show()
 
