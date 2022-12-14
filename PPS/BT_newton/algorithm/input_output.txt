@@ -1,0 +1,7 @@
+Hoocne nhân:
+- input:  mảng lưu trữ các hệ số b_i của đa thức bậc n-1 và c
+- output:  mảng lưu trữ các hệ số a_i của đa thức mới bậc n
+
+Hoocne chia:
+- input: mảng lưu trữ các hệ số a_i của đa thức bậc n và c
+- output:  mảng lưu trữ n-1 phần tử đầu là các hệ số b_i của đa thức mới sau khi chia có bậc n - 1  và 1 phẩn tử cuối mảng là giá trị của đa thức tại c

@@ -26,11 +26,12 @@ class Lagrange:
 
     # region Draw Graph
     def draw_graph(self):
-        x = np.array(self.x)
-        y = np.array(self.y)
-
-        plt.scatter(x, y, color="red")
-        x_points = np.linspace(self.x[0] - 0.5, self.x[-1] + 0.5, 1000)
+        # self.x.pop()
+        # x = np.array(self.x)
+        # y = np.array(self.y)
+        #
+        # plt.scatter(x, y, color="red")
+        x_points = np.linspace(self.x[0], self.x[-1]-1, 1000)
         # print('x', x_points)
         y_coeff = self.lagrange()
         # print('y', y_coeff)
@@ -49,10 +50,11 @@ class Lagrange:
         # self.read_file("../input.txt")
         # print(self.x)
         # print(self.y)
-        print(self.lagrange())
+        print('Hệ số xấp xỉ hàm p(x):', self.lagrange())
         # print(Degf_k(self.lagrange(), 3, 2.7))
         x = float(input('bạn muốn tính tại x = bnhiu: '))
         print(f_x(self.lagrange(), x))
+        print(Degf_k(self.lagrange(), 3, 2.7))
         self.draw_graph()
 
     # endregion

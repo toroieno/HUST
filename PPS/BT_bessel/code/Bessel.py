@@ -92,7 +92,7 @@ class Bessel:
         self.x, self.y = read_file("../input.txt")
         self.h = self.x[1] - self.x[0]
         self.x0 = self.x[int(len(self.x) / 2) - 1]
-        print(f_x(self.bessel(), self.u(3.5, self.x0, self.h)))
+        print(f_x(self.bessel(), self.u(3, self.x0, self.h)))
 
     # endregion
 

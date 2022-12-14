@@ -2,8 +2,8 @@ from math import *
 
 def g(x):
   # return 2 * x**2 - 3*x + 3
-  return sin(x)
-  return x**2
+  return sin(x) + cos(x) * tan(x) + 2.7 ** (x**2)
+  # return x**2
  
 def write_file(a, b):
   try:
@@ -18,4 +18,6 @@ def write_file(a, b):
 
 
 if __name__ == '__main__':
-  write_file(1,10)
+  write_file(1,7)
+  print(g(3.5))
+
