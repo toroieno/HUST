@@ -13,7 +13,7 @@ class Newton:
             input_str = f.readline()
             if input_str == '':
                 break
-            arr = input_str.split(" ")
+            arr = input_str.split("\t")
             self.x.append(float(arr[0]))
             self.y.append(float(arr[1]))
 
@@ -77,12 +77,22 @@ class Newton:
                 p[j] += w[j]
         return p
 
+    #tính đạo hàm bậc k của f(x)
+    def Degf_k(self, arr, k, c):
+        factorial = 1
+        for i in range(1, k + 1):
+            arr = self.hoocne_divive(arr, c)
+            arr.pop()  # lay dao ham nen bo gia tri cuoi di
+            factorial *= i
+        res = self.hoocne_divive(arr, c).pop()  #lay gia tri tai c
+        return factorial * res
 
     def run(self):
         self.read_file("../input.txt")
         self.bangtyhieu()
-        print(self.newtonbatky())
-        # print(self.hoocne_divive(self.newtonbatky(), 13.5).pop())
+        # print(self.newtonbatky())
+        print(self.hoocne_divive(self.newtonbatky(), -0.15594603827196885).pop())  #tinh gia tri cua ham tai x0
+        print(self.Degf_k(self.newtonbatky(), 1, -0.15594603827196885))  #lay dao ham nham xet tinh bien thien tang hoac giam
 
 
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+from CasualFunction import *
 class BT:
   def read_file(self):
     f = open('../input1.txt', 'r')

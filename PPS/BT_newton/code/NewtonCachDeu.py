@@ -15,7 +15,8 @@ class Newton:
             input_str = f.readline()
             if input_str == '':
                 break
-            arr = input_str.split(" ")
+            arr = input_str.split("\t")
+            # print(arr)
             self.x.append(float(arr[0]))
             self.y.append(float(arr[1]))
         self.h = self.x[1] - self.x[0]
@@ -116,8 +117,8 @@ class Newton:
 
     def run(self):
         self.read_file("../input.txt")
-        print(self.bt(1, 0.2, 100, 11.75))
-        # print(self.newtoncachdeu_x_solve(2.5))
+        # print(self.bt(1, 0.2, 100, 11.75))
+        print(self.newtoncachdeu_x_solve(1928))
         # print(self.newtoncachdeu_t_coeff())
         # print(self.newtonbatky())
         # print(self.hoocne_divive(self.newtonbatky(), 13.5).pop())

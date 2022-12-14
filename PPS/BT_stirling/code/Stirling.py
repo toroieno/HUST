@@ -1,104 +1,71 @@
-from math import *
 import numpy as np
+from CasualFunction import *
+
 
 class Stirling:
 
+    # region Init
     def __init__(self):
-        self.arr = []
-        self.y = []
-        self.a = []
         self.x = []
+        self.y = []
+        self.x0 = None
         self.h = None
 
-    def read_file(self, string):
-        f = open(string, 'r')
-        while True:
-            input_str = f.readline()
-            if input_str == '':
-                break
-            arr = input_str.split(" ")
-            self.x.append(float(arr[0]))
-            self.y.append(float(arr[1]))
-        self.h = self.x[1] - self.x[0]
-        f.close()
+    # endregion
 
-    def hoocne_multiply(self, arr):
-        b = [1, -arr[0]]
-        k = 1
-        while k < len(arr):
-            b.append(0)
-            self.a = [b[0]]  # an = bn
-            c = arr[k]
-            for i in range(1, len(b)):
-                a_k = b[i] - b[i - 1] * c  # a_k = b_k - b_(k + 1) * c
-                self.a.append(a_k)
-            b = self.a.copy()
-            k += 1
-        else:
-            self.a = b.copy()
-        return self.a
+    # region Stirling Even
 
-    def hoocne_divive(self, arr, c):
-        b = [arr[0]]
-        for i in range(1, len(arr)):
-            b_k = arr[i] + b[i - 1] * c  # b_k = a_k + b_k-1 * c
-            b.append(float(b_k))
-        return b
-
-    def delta_y(self, begin, end):
-        k = end - begin
-        if k == 1:
-            return self.y[end] - self.y[begin]
-        return self.delta_y(begin + 1, end) - self.delta_y(begin, end - 1)
-
-    def factorial(self, n):
-        if n == 0:
-            return 1
-        return self.factorial(n - 1) * n
-
-    #S_(2K)
+    # S_(2K)
     def stirling_even(self, middle, k):
         begin = middle - k
-        end = begin + 2*k
-        delta = self.delta_y(begin, end) / self.factorial(2*k)
+        end = begin + 2 * k
+        delta = delta_y(self.y, begin, end) / factorial(2 * k)
         temp_t = []
-        for i in range(1, k+1):
-            temp_t.append((i-1)**2)
-        temp_t = self.hoocne_multiply(temp_t)
+        for i in range(1, k + 1):
+            temp_t.append((i - 1) ** 2)
+        temp_t = hoocne_multiply(temp_t)
         temp_t = [temp_t[j] * delta for j in range(len(temp_t))]
 
-        t = []
-        for i in range(len(temp_t)-1):
-            t.append(temp_t[i])
-            t.append(0.0)
-        t.append(temp_t[-1])
+        t_arr = []
+        for i in range(len(temp_t) - 1):
+            t_arr.append(temp_t[i])
+            t_arr.append(0.0)
+        t_arr.append(temp_t[-1])
 
-        return t
+        return t_arr
 
-    #S_(2k+1)
+    # endregion
+
+    # region Stirling Odd
+
+    # S_(2k+1)
     def stirling_odd(self, middle, k):
         begin = middle - k - 1
-        end = begin + (2*k + 1)
-        delta_1 = self.delta_y(begin, end)
-        delta_2 = self.delta_y(begin + 1, end + 1)
-        delta = (delta_1 + delta_2) / (self.factorial(2*k + 1) * 2)
+        end = begin + (2 * k + 1)
+        delta_1 = delta_y(self.y, begin, end)
+        delta_2 = delta_y(self.y, begin + 1, end + 1)
+        delta = (delta_1 + delta_2) / (factorial(2 * k + 1) * 2)
         temp_t = []
-        for i in range(1, k+1):
-            temp_t.append(i**2)
-        temp_t = self.hoocne_multiply(temp_t)
+        for i in range(1, k + 1):
+            temp_t.append(i ** 2)
+        temp_t = hoocne_multiply(temp_t)
         temp_t = [temp_t[j] * delta for j in range(len(temp_t))]
 
-        t = []
+        t_arr = []
         for i in range(len(temp_t)):
-            t.append(temp_t[i])
-            t.append(0.0)
+            t_arr.append(temp_t[i])
+            t_arr.append(0.0)
 
-        return t
+        return t_arr
 
-    #all
+    # endregion
+
+    # region Main
+
+    # all
     def stirling(self):
         middle = int(len(self.x) / 2)
-        init_value = (self.delta_y(middle - 1, middle) + self.delta_y(middle, middle + 1)) / 2
+        init_value = (delta_y(self.y, middle - 1, middle) + delta_y(self.y, middle, middle + 1)) / 2
         p = np.zeros(len(self.x) - 2).tolist()
         p.append(init_value)
         p.append(self.y[middle])
@@ -107,21 +74,22 @@ class Stirling:
         for k in range(1, count_odd):
             s_odd = self.stirling_odd(middle, k)
             for i in range(len(s_odd)):
-                p[-i-1] += s_odd[len(s_odd) - i - 1]
+                p[-i - 1] += s_odd[len(s_odd) - i - 1]
         for k in range(1, count_even):
             s_even = self.stirling_even(middle, k)
             for i in range(len(s_even)):
-                p[-i-1] += s_even[len(s_even) - i - 1]
+                p[-i - 1] += s_even[len(s_even) - i - 1]
 
-        print(self.x[middle])
-        print(self.hoocne_divive(p, self.t(5.5, self.x[middle], 1)).pop())
-
-    def t(self, x, x0, h):
-        return (x - x0) / h
+        return p
 
     def run(self):
-        self.read_file("../input.txt")
-        self.stirling()
+        self.x, self.y = read_file("../input.txt")
+        self.h = self.x[1] - self.x[0]
+        self.x0 = self.x[int(len(self.x) / 2)]
+        # print(self.x[middle])
+        print(f_x(self.stirling(), t(5.5, self.x0, 1)))
+
+    # endregion
 
 
 if __name__ == '__main__':
