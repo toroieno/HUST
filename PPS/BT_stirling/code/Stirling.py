@@ -1,4 +1,3 @@
-import numpy as np
 from CasualFunction import *
 
 
@@ -87,6 +86,7 @@ class Stirling:
         self.h = self.x[1] - self.x[0]
         self.x0 = self.x[int(len(self.x) / 2)]
         # print(self.x[middle])
+        print('he so: ', self.stirling())
         print(f_x(self.stirling(), t(5.5, self.x0, 1)))
 
     # endregion

@@ -1,4 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
 # region Input
+
+def remove_duplicate_x(arr_x, arr_y):
+    temp_arr_x = []
+    temp_arr_y = []
+    for i in range(len(arr_x)):
+        if temp_arr_x.count(arr_x[i]) == 0:
+            temp_arr_x.append(arr_x[i])
+            temp_arr_y.append(arr_y[i])
+
+    return temp_arr_x, temp_arr_y
+
 
 def read_file(string):
     x = []
@@ -13,7 +28,7 @@ def read_file(string):
         y.append(float(arr[1]))
 
     f.close()
-    return x, y
+    return remove_duplicate_x(x, y)
 
 
 # endregion
@@ -102,5 +117,25 @@ def Degf_k(arr, k, x):
         arr.pop()  # lay dao ham nen bo gia tri cuoi di
     res = hoocne_divide(arr, x).pop()  # lay gia tri tai x
     return factorial(k) * res
+
+
+# endregion
+
+# region Graph
+def draw_graph(x_coeff, p_x, arr_x=None, arr_y=None):
+    # draw points
+    if arr_x is not None and arr_y is not None:
+        x = np.array(arr_x)
+        y = np.array(arr_y)
+        plt.scatter(x, y, color="red")
+
+    # draw graph
+    x_points = np.linspace(x_coeff[0] - 0.5, x_coeff[-1] + 0.5, 1000)
+    y_points = [f_x(p_x, x_point) for x_point in x_points]
+    plt.plot(x_points, y_points)
+
+    # plt.savefig("mygraph.png")
+    plt.show()
+
 
 # endregion

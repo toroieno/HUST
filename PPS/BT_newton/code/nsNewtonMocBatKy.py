@@ -91,7 +91,8 @@ class Newton:
             print("\nP(x)(ns_lui) = ", p)
 
         # tính giá trị của đa thức tại x = c
-        c = float(input('Bạn mún tính đa thức tại c = bnhiu nà: '))
+        # c = float(input('Bạn mún tính đa thức tại c = bnhiu nà: '))
+        c = 1.8
         print("\nP(x = %f) = " % c, hoocne_divide(p, c).pop())
 
     # endregion

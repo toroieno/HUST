@@ -11,13 +11,20 @@ def g(x):
 def write_file(a, b):
     try:
         f = open('input.txt', 'w')
-        for i in range(a, b):
+        i = a
+        while i < b:
             y = g(i)
             f.write("{} {}\n".format(i, y))
-        f.close()
+            i = i + .2
+
+
+        # for i in range(a, b, 0.2):
+        #     y = g(i)
+        #     f.write("{} {}\n".format(i, y))
+        # f.close()
     except:
         print('read file error!')
 
 
 if __name__ == '__main__':
-    write_file(1, 6)
+    write_file(-1, 1)

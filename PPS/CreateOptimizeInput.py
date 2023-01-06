@@ -29,5 +29,5 @@ def draw_graph():
     plt.show()
 
 print(f(4.5))
-draw_graph()
-write_optimized_x(6, 2, 5)
+# draw_graph()
+write_optimized_x(9, 1, 5)
