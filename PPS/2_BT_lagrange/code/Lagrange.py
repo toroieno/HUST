@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
+import sys 
+sys.path.insert(1, '../../')
 from CasualFunction import *
 
 

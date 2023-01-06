@@ -1,3 +1,5 @@
+import sys 
+sys.path.insert(1, '../../')
 from CasualFunction import *
 import numpy as np
 
@@ -87,7 +89,7 @@ class Newton:
             print("\nP(x)(ns_lui_cach_deu) = ", p)
 
         # tính giá trị của đa thức tại x = c
-        c = float(input('Bạn mún tính đa thức tại c = bnhiu nà: '))
+        c = float(input('Cần tính tại x = '))
         t_value = t(c, self.x[0], self.h) if flag else t(c, self.x[-1], self.h)
 
         print("t = ", t_value)
