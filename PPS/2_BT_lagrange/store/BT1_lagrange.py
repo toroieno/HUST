@@ -1,7 +1,17 @@
+import sys 
+sys.path.insert(1, '../../')
+from CasualFunction import *
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 class Lagrange:
+  # region variables
+  def __init__(self):
+    self.x = []
+    self.y = []
+  # endregion variables
+
   def read_file(self):
     try:
       f = open("input.txt", "r")
