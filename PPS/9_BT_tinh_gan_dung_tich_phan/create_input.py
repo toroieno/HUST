@@ -1,9 +1,12 @@
 from math import *
 
 def g(x):
+  # return 3 * x**3 + 2 * x**2 - 3*x + 3
   # return 2 * x**2 - 3*x + 3
   # return sin(x)
-  return float(x**2)
+  # return x**2
+  return 1 / (1 + x**2)
+  # return 2 * x
  
 def write_file(a, b, kc):
   try:
@@ -23,5 +26,4 @@ def write_file(a, b, kc):
 
 
 if __name__ == '__main__':
-  write_file(1, 3, 0.2)
-  print(g(2.5))
+  write_file(0, 2, 0.2)

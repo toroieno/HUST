@@ -31,6 +31,32 @@ def read_file(string):
     return remove_duplicate_x(x, y)
 
 
+# thêm mốc mới vào phía trên: (x, y): mốc mới; arr_x: các mốc ban đầu; arr: mảng lưu các giá trị tỷ sai phân(đường chéo)
+def add_new_above_point(x, y, arr_x, arr):
+    arr_x.insert(0, x)
+    temp_arr = [y, arr[0]]
+    space = 0
+    for i in range(len(arr) + 1):
+        space = space + 1
+        new_delta = (temp_arr[-1] - temp_arr[-2]) / (arr_x[i] - arr_x[i - space])
+        temp_arr.append(new_delta)
+
+    return temp_arr
+
+
+# thêm mốc mới vào phía dưới: (x, y): mốc mới; arr_x: các mốc ban đầu; arr: mảng lưu các giá trị tỷ sai phân(hàng cuối)
+def add_new_below_point(x, y, arr_x, arr):
+    arr_x.append(x)
+    temp_arr = [y]
+    space = 0
+    for i in range(len(arr) + 1):
+        space = space + 1
+        new_nabla = (temp_arr[-1] - arr[i]) / (arr_x[i] - arr_x[i - space])
+        temp_arr.append(new_nabla)
+
+    return temp_arr
+
+
 # endregion
 
 # region Hoocne
@@ -119,6 +145,19 @@ def Degf_k(arr, k, x):
     return factorial(k) * res
 
 
+def max_second_derivative(f, a, b, n=1000):
+    h = (b - a) / n
+    x = np.linspace(a, b, n + 1)
+    d2f = np.diff(np.diff(f(x))) / h ** 2
+    return np.max(np.abs(d2f))
+
+
+def max_fourth_derivative(f, a, b, n=1000):
+    h = (b - a) / n
+    x = np.linspace(a, b, n + 1)
+    d4f = np.diff(np.diff(np.diff(np.diff(f(x))))) / h ** 4
+    return np.max(np.abs(d4f))
+
 # endregion
 
 # region Graph
@@ -136,6 +175,5 @@ def draw_graph(x_coeff, p_x, arr_x=None, arr_y=None):
 
     # plt.savefig("mygraph.png")
     plt.show()
-
 
 # endregion

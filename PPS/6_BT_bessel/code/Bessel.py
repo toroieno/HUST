@@ -1,4 +1,5 @@
-import numpy as np
+import sys 
+sys.path.insert(1, '../../')
 from CasualFunction import *
 
 
@@ -92,7 +93,9 @@ class Bessel:
         self.x, self.y = read_file("../input.txt")
         self.h = self.x[1] - self.x[0]
         self.x0 = self.x[int(len(self.x) / 2) - 1]
-        print(f_x(self.bessel(), self.u(3, self.x0, self.h)))
+        p = self.bessel()
+        print('P(x):', p)
+        print(f_x(p, self.u(11, self.x0, self.h)))
 
     # endregion
 

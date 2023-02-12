@@ -1,3 +1,5 @@
+import sys 
+sys.path.insert(1, '../../')
 from CasualFunction import *
 
 
@@ -12,6 +14,13 @@ class Stirling:
 
     # endregion
 
+    # region xu ly input
+    def set_input(self):
+        n = int(input('Số mốc dùng: '))
+
+
+    # endregion
+
     # region Stirling Even
 
     # S_(2K)
@@ -19,12 +28,15 @@ class Stirling:
         begin = middle - k
         end = begin + 2 * k
         delta = delta_y(self.y, begin, end) / factorial(2 * k)
+        
+        # tính tích t(t-1)(t-4)...
         temp_t = []
         for i in range(1, k + 1):
             temp_t.append((i - 1) ** 2)
         temp_t = hoocne_multiply(temp_t)
         temp_t = [temp_t[j] * delta for j in range(len(temp_t))]
 
+        # lưu hệ số tìm được vào mảng t_arr
         t_arr = []
         for i in range(len(temp_t) - 1):
             t_arr.append(temp_t[i])
@@ -44,12 +56,14 @@ class Stirling:
         delta_1 = delta_y(self.y, begin, end)
         delta_2 = delta_y(self.y, begin + 1, end + 1)
         delta = (delta_1 + delta_2) / (factorial(2 * k + 1) * 2)
+        # tính tích t(t-1)(t-4)...
         temp_t = []
         for i in range(1, k + 1):
             temp_t.append(i ** 2)
         temp_t = hoocne_multiply(temp_t)
         temp_t = [temp_t[j] * delta for j in range(len(temp_t))]
 
+        # lưu hệ số tìm được vào mảng t_arr
         t_arr = []
         for i in range(len(temp_t)):
             t_arr.append(temp_t[i])
@@ -82,12 +96,16 @@ class Stirling:
         return p
 
     def run(self):
-        self.x, self.y = read_file("../input.txt")
+        # số mốc lẻ
+        # self.x, self.y = read_file("../input.txt")
+        self.x, self.y = read_file("../../test_input/stirling.txt")
+        print(self.x, self.y)
         self.h = self.x[1] - self.x[0]
         self.x0 = self.x[int(len(self.x) / 2)]
         # print(self.x[middle])
         print('he so: ', self.stirling())
-        print(f_x(self.stirling(), t(5.5, self.x0, 1)))
+        x_0 = float(input('tính tại x0 = '))
+        print(f_x(self.stirling(), t(x_0, self.x0, 1)))
 
     # endregion
 
