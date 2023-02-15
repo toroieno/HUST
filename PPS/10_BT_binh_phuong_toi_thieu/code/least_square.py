@@ -43,9 +43,6 @@ class LeastSquare:
     def arr_sin(self, r):
         return [sin(r * x) for x in self.x]
 
-    def deg_to_rad(self, arr):
-        return [x * pi / 180 for x in arr]
-
     # gauss-jordan
     def solve_linear_equations(self, A):
         n = len(A)
@@ -97,7 +94,7 @@ class LeastSquare:
         return x
 
     def option_2(self):
-        self.x = self.deg_to_rad(self.x)
+        self.x = radians(self.x)
         k = int(input('k= '))
         temp_a = [self.n]
 
