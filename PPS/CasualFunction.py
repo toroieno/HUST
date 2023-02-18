@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+from math import *
 
 # region Input
 
@@ -134,7 +134,6 @@ def factorial(n):
 # Tinh gia tri cua ham so f tai x
 def f_x(arr, x):
     return hoocne_divide(arr, x).pop()
-
 
 # Tính giá trị đạo hàm bậc k của f(x) tai x
 def Degf_k(arr, k, x):
