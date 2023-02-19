@@ -157,6 +157,23 @@ def max_fourth_derivative(f, a, b, n=1000):
     d4f = np.diff(np.diff(np.diff(np.diff(f(x))))) / h ** 4
     return np.max(np.abs(d4f))
 
+def truy_duoi(A, B, C, d, n):
+    alpha = np.empty(n + 1)
+    beta = np.empty(n + 1)
+
+    alpha[1] = B[0] / C[0]
+    beta[1] = -d[0] / C[0]
+
+    for i in range(1, n):
+        alpha[i + 1] = B[i] / (C[i] - alpha[i] * A[i])
+        beta[i + 1] = (A[i] * beta[i] + d[i]) / (C[i] - alpha[i] * A[i])
+
+    x = np.empty(n + 1)
+    x[n] = (A[n] * beta[n] + d[n]) / (C[n] - A[n] * alpha[n])
+    for i in range(n - 1, -1, -1):
+        x[i] = alpha[i + 1] * x[i + 1] + beta[i + 1]
+
+    return x
 # endregion
 
 # region Graph
