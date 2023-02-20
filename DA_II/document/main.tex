@@ -1,9 +1,26 @@
 \input{setup}
 
-
 \begin{document}
-Hệ thống quản lý sinh viên khoa/viện Đại học Bách khoa Hà Nội
-\input{khao_sat_he_thong.tex}
+\begin{titlepage}
+	\input{cover_page.tex}
+	\input{gv_nhan_xet.tex}
+	\input{loi_cam_on.tex}
+	\newpage
+	\tableofcontents
+\end{titlepage}
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\rfoot{\thepage}
+
+\chapter*{Mở đầu}
+\input{1_tong_quan_ve_de_tai.tex}
+\input{2_phan_tich_he_thong.tex}
+\input{3_thiet_ke_he_thong.tex}
+\input{4_giao_dien.tex}
+\input{5_tong_ket.tex}
+
+\input{references.tex}
 
 \chapter{Đặc tả yêu cầu bài toán}
 \section{Mô tả yêu cầu}
@@ -66,22 +83,6 @@ Xây dựng phần mềm quản lý thông tin sinh viên:
 	      \end{itemize}
 \end{itemize}
 
-\section{Các tác nhân của hệ thống}
-\begin{tabular}{|c|c|l|}
-	\hline
-	\thead{STT} & \thead{Tác nhân} & \thead{Chức năng}                                                    \\
-	\hline
-	1           & Admin            & \makecell[l]{- Quản trị hệ thống.                                    \\ - Phân quyền người dùng. \\ - Cấp lại mật khẩu cho người dùng.}\\
-	\hline
-	2           & Giáo vụ          & \makecell[l]{- Quản lý danh sách sinh viên.                          \\ - Quản lý form trả về.} \\
-	\hline
-	3           & Giảng viên       & \makecell[l]{- Quản lý danh sách sinh viên lớp.}                     \\
-	\hline
-	4           & Sinh viên        & \makecell[l]{- Đăng nhập, cập nhật thông tin.                        \\ - Sử dụng hệ thống, thực hiện điền form. \\ - Tìm kiếm, xem thông tin.}\\
-	\hline
-	5           & Người dùng       & \makecell[l]{- Người dùng hệ thống với chức năng đăng ký tài khoản.} \\
-	\hline
-\end{tabular}
 
 \chapter{Phân tích các biểu đồ}
 \section{Biểu đồ phân cấp chức năng}

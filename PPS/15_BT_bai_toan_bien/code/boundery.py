@@ -19,6 +19,7 @@ class Boundary:
         self.sigma2 = None
         self.muy1 = None
         self.muy2 = None
+        self.check_boundary = None
 
     # endregion
 
@@ -45,7 +46,7 @@ class Boundary:
         alpha = np.empty(n + 1)
         beta = np.empty(n + 1)
         y = np.empty(n + 1)
-        if self.check_boundary() == 1:
+        if self.check_boundary == 1:
             # truy duoi phai
             alpha[1] = 0
             beta[1] = self.u_a
@@ -58,7 +59,7 @@ class Boundary:
 
             return y
 
-        elif self.check_boundary() == 3:
+        elif self.check_boundary == 3:
             #truy duoi phai
             a_1 = self.p(x[1] - self.h / 2)
             B[0] = a_1 / self.h
@@ -74,11 +75,9 @@ class Boundary:
                 y[i] = alpha[i+1] * y[i+1] + beta[i+1]
             return y
 
-    def check_boundary(self):
-        return 1
-
     # region Input
     def input(self):
+        self.check_boundary = 1  # chọn bài toán biên loại 1 hoặc 3
         # cho khoảng để tính - input x0 < x < x_end
         self.p = lambda x: 1
         self.q = lambda x: x**2
@@ -95,8 +94,6 @@ class Boundary:
         self.muy2 = 0
 
     # endregion
-
-
 
     # region Main
     def run(self):
