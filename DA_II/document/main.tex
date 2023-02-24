@@ -15,106 +15,18 @@
 
 \chapter*{Mở đầu}
 \input{1_tong_quan_ve_de_tai.tex}
+
 \input{2_phan_tich_he_thong.tex}
+	\input{diagram/bieu_do_hoat_dong.tex}
+	\input{diagram/bieu_do_tuan_tu.tex}
+
 \input{3_thiet_ke_he_thong.tex}
+	\input{diagram/database.tex}
+
 \input{4_giao_dien.tex}
+
 \input{5_tong_ket.tex}
 
 \input{references.tex}
-
-\chapter{Đặc tả yêu cầu bài toán}
-\section{Mô tả yêu cầu}
-\subsection{Yêu cầu hệ thống quản lý sinh viên}
-Xây dựng phần mềm quản lý thông tin sinh viên:
-\begin{enumerate}
-	\item Phầm mềm có yêu cầu đăng ký/đăng nhập hệ thống.
-	\item Phầm mềm có thông tin lưu trữ của sinh viên: CPA, số tín chỉ đã qua, số tín chỉ nợ.
-	\item Phần mềm có thể thống kê, đánh giá theo các mức cảnh báo sinh viên.
-	\item Chức năng đăng ký hướng dẫn đồ án, thực tập.
-	\item Chức năng tạo CV
-	\item Chức năng tìm kiếm giảng viên, đề tài đồ án, vị trí thực tập.
-\end{enumerate}
-
-\subsection{Hệ thống quản lý sinh viên}
-\begin{itemize}
-	\item Chức năng đăng ký thành viên:
-	      \begin{itemize}
-		      \item Mỗi sinh viên đăng ký tài khoản mới với tài khoản microsoft mail trường cấp.
-		      \item Đăng ký trực tiếp từ giao diện khởi động hệ thống.
-		      \item Tài khoản đó sau khi đăng ký thành công có thể đăng nhập vào hệ thống.
-		      \item Khi đăng ký thành công thì mặc định đó là tài khoản sinh viên.
-	      \end{itemize}
-	\item Chức năng đăng nhập/đăng xuất hệ thống có phân quyền người dùng:
-	      \begin{itemize}
-		      \item Tài khoản đăng nhập hệ thống với đúng tài khoản và mật khẩu mà hệ thống cung cấp.
-		      \item Có thể đăng nhập bằng tài khoản google gmail hoặc tài khoản facebook trước đó đã được liên kết với tài khoản đăng ký.
-		      \item Tài khoản đăng nhập nếu không còn nhu cầu sử dụng hệ thống hoặc cần đăng nhập tài khoản khác có thể tiến hành đăng xuất.
-	      \end{itemize}
-	\item Chức năng lưu trữ thông tin:
-	      \begin{itemize}
-		      \item Sinh viên có thể cập nhật, lưu trữ các thông tin học tập của cá nhân: CPA, số tín chỉ đã qua, số tín chỉ nợ, thuộc lớp nào.
-		      \item Cán bộ giảng viên phụ trách có thể xem danh sách lớp và xác nhận sinh viên.
-	      \end{itemize}
-	\item Chức năng cập nhật thông tin:
-	      \begin{itemize}
-		      \item Hệ thống cho phép người dùng thay đổi thông tin cá nhân của mình.
-		      \item Admin có thể cấp lại mật khẩu cho người dùng.
-	      \end{itemize}
-	\item Chức năng thống kê, đưa ra mức cảnh báo:
-	      \begin{itemize}
-		      \item Hệ thống có thể đưa ra biểu đồ thống kê số lượng các sinh viên đang ở các mức cảnh báo 1, 2, 3 và các sinh viên chậm chương trình.
-		      \item Hệ thống có thể xuất dữ liệu ra file excel, pdf.
-	      \end{itemize}
-	\item Chức năng đăng ký hướng dẫn đồ án, thực tập:
-	      \begin{itemize}
-		      \item Hệ thống cung cấp form đăng ký hướng dẫn đồ án, form đăng ký thực tập.
-		      \item Giáo vụ có thể kiểm tra các form đã submit về.
-		      \item Trưởng bộ môn có thể truy cấp để xếp thứ tự ưu tiên các sinh viên.
-	      \end{itemize}
-	\item Chức năng tạo CV:
-	      \begin{itemize}
-		      \item Hệ thống cung cấp form để sinh viên điền các thông tin cá nhân của mình: giới thiệu bản thân, CPA, định hướng nghề nghiệp, kỹ năng hiện có,...
-		      \item Hệ thống nhận form submit và trả về một file word bản CV mẫu, sinh viên có thể tải xuống để xem, chỉnh sửa.
-	      \end{itemize}
-	\item Chức năng tìm kiếm giảng viên, đề tài đồ án, vị trí thực tập:
-	      \begin{itemize}
-		      \item Hệ thống cho phép tìm kiếm từ khoá theo tên giảng viên, từ đó đưa ra các đề tài mà giảng viên hướng dẫn
-		      \item Hệ thống cung cấp danh sách các vị trí thực tập.
-	      \end{itemize}
-\end{itemize}
-
-
-\chapter{Phân tích các biểu đồ}
-\section{Biểu đồ phân cấp chức năng}
-\begin{center}
-	\includegraphics[width=1.1\textwidth]{image/BDPCCN.png}
-	\begin{figure}
-		\centering
-		\caption{biểu đồ phân cấp chức năng}
-	\end{figure}
-\end{center}
-
-\section{Biểu đồ usecase}
-\begin{center}
-	\includegraphics[width=1.\textwidth]{../drawio/usecase.png}
-	\begin{figure}[h]
-		\centering
-		\caption{biểu đồ usecase}
-	\end{figure}
-\end{center}
-
-\section{Biểu đồ lớp}
-\begin{center}
-	\includegraphics[width=1.2\textwidth]{../out/plantUML/class/class.png}
-	\begin{figure}[h]
-		\centering
-		\caption{biểu đồ lớp}
-	\end{figure}
-\end{center}
-
-\input{diagram/bieu_do_hoat_dong.tex}
-\input{diagram/bieu_do_tuan_tu.tex}
-\input{diagram/database.tex}
-% \input{giao_dien.tex}
 
 \end{document}

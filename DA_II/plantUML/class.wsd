@@ -53,15 +53,10 @@ class LopHoc {
   #maGiangVien
 }
 
-class TruongPhong {
-  #maTruongPhong
-  #tenTruongPhong
-  #ngaySinh
 
-}
-class GiaoVu {
-  #maGiaoVu
-  #tenGiaoVu
+class CanBo {
+  #maCanBo
+  #tenCanBo
   #ngaySinh
 
 }
@@ -74,11 +69,10 @@ class FormDangKy {
   thongKe(): void
 }
 FormDangKy -- SinhVien
-FormDangKy -- TruongPhong
 
-GiaoVu -- SinhVien
-GiaoVu -- GiangVien
-GiaoVu -- FormDangKy
+CanBo -- SinhVien
+CanBo -- GiangVien
+CanBo -- FormDangKy
 SinhVien -- LopHoc
 
 GiangVien <|-- GiangVienBoMon

@@ -1,41 +1,27 @@
-\section{Biểu đồ hoạt động}
+\section{Đặc tả usecase}
 \subsection{Đăng nhập}
-\begin{center}
-	\includegraphics[width=1.1\textwidth]{../drawio/activity/login.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ đăng nhập}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|l|}
-	\hline
-	\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng \\
-	\hline
-	\textbf{Mô tả}                & Đăng nhập                                           \\
-	\hline
-	\textbf{Kích hoạt}            & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
-	\hline
-	\textbf{Luồng chính}          & \makecell[l]{1. Chọn chức năng đăng nhập            \\ 2. Hiển thị màn hình đăng nhập \\ 3. Nhập tên đăng nhập và mật khẩu \\ 4. Hiển thị kiểm tra thông tin \\ 5. Nếu thành công chuyển tới giao diện chính \\ 6. Kết thúc} \\
-	\hline
-	\textbf{Các luồng thay thế}   & \makecell[l]{Mật khẩu không hợp lệ:                 \\ 1. Thông báo ra màn hình mật khẩu sai \\ 2. Quay lại bước 2 của luồng chính \\ Quên mật khẩu: \\ 1. Hiển thị màn hình nhập email \\ 2. Nhập và chọn chức năng quên mật khẩu \\ 3. Kiểm tra hợp lệ hệ thống gửi mail xác nhận \\ 4. Hiển thị thông báo thành công \\ 5. Kết thúc} \\
-	\hline
-	\textbf{Tiền điều kiện}       & Tài khoản trước đó đã được đăng ký                  \\
-	\hline
-	\textbf{Hậu điều kiện}        & Người dùng đăng nhập thành công                     \\
-	\hline
-	\textbf{Các yêu cầu đặc biệt} &                                                     \\
-	\hline
-\end{tabular}
+	\begin{tabular}{|l|p{0.7\textwidth}|}
+		\hline
+		\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, cán bộ \\
+		\hline
+		\textbf{Mô tả}                & Đăng nhập                                           \\
+		\hline
+		\textbf{Kích hoạt}            & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+		\hline
+		\textbf{Luồng chính}          & \makecell[l]{1. Chọn chức năng đăng nhập            \\ 2. Hiển thị màn hình đăng nhập \\ 3. Nhập tên đăng nhập và mật khẩu \\ 4. Hiển thị kiểm tra thông tin \\ 5. Nếu thành công chuyển tới giao diện chính \\ 6. Kết thúc} \\
+		\hline
+		\textbf{Các luồng thay thế}   & \makecell[l]{Mật khẩu không hợp lệ:                 \\ 1. Thông báo ra màn hình mật khẩu sai \\ 2. Quay lại bước 2 của luồng chính \\ Quên mật khẩu: \\ 1. Hiển thị màn hình nhập email \\ 2. Nhập và chọn chức năng quên mật khẩu \\ 3. Kiểm tra hợp lệ hệ thống gửi mail xác nhận \\ 4. Hiển thị thông báo thành công \\ 5. Kết thúc} \\
+		\hline
+		\textbf{Tiền điều kiện}       & Tài khoản trước đó đã được đăng ký                  \\
+		\hline
+		\textbf{Hậu điều kiện}        & Người dùng đăng nhập thành công                     \\
+		\hline
+		\textbf{Các yêu cầu đặc biệt} &                                                     \\
+		\hline
+	\end{tabular}
 
 \subsection{Đăng ký}
-\begin{center}
-	\includegraphics[width=1.1\textwidth]{../drawio/activity/logup.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ đăng ký}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
 	\textbf{Các tác nhân}       & Admin, sinh viên, giảng viên                                        \\
 	\hline
@@ -56,16 +42,9 @@
 \end{tabular}
 
 \subsection{Đăng xuất}
-\begin{center}
-	\includegraphics[width=.7\textwidth]{../drawio/activity/logout.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ đăng xuất}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
-	\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, giáo vụ, trưởng phòng                              \\
+	\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, cán bộ                              \\
 	\hline
 	\textbf{Mô tả}                & Đăng xuất                                                                        \\
 	\hline
@@ -84,16 +63,9 @@
 \end{tabular}
 
 \subsection{Quên mật khẩu}
-\begin{center}
-	\includegraphics[width=.7\textwidth]{../drawio/activity/forgot_password.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ quên mật khẩu}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
-	\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên                            \\
+	\textbf{Các tác nhân}         & Sinh viên, giảng viên, cán bộ                            \\
 	\hline
 	\textbf{Mô tả}                & Quên mật khẩu                                           \\
 	\hline
@@ -112,16 +84,9 @@
 \end{tabular}
 
 \subsection{Cập nhật thông tin}
-\begin{center}
-	\includegraphics[width=1.1\textwidth]{../drawio/activity/updatedata.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ cập nhật thông tin}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
-	\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên                                                              \\
+	\textbf{Các tác nhân}         & Sinh viên, giảng viên                                                              \\
 	\hline
 	\textbf{Mô tả}                & Cập nhật thông tin cá nhân của người dùng, điểm của sinh viên, thông tin đồ án giảng viên \\
 	\hline
@@ -140,16 +105,9 @@
 \end{tabular}
 
 \subsection{Thống kê}
-\begin{center}
-	\includegraphics[width=.3\textwidth]{../drawio/activity/statistical.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ thống kê}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
-	\textbf{Các tác nhân}         & Admin, giảng viên, giáo vụ, trưởng phòng                                                                                           \\
+	\textbf{Các tác nhân}         & Admin, giảng viên, cán bộ                                                                                           \\
 	\hline
 	\textbf{Mô tả}                & Thống kê các thông tin: điểm CPA, số tín chỉ nợ, mức cảnh báo của các sinh viên; số lượng đăng ký đồ án; số lượng đăng ký thực tập \\
 	\hline
@@ -168,14 +126,7 @@
 \end{tabular}
 
 \subsection{Đăng ký đồ án}
-\begin{center}
-	\includegraphics[width=.9\textwidth]{../drawio/activity/register_doan.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ đăng ký đồ án}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
 	\textbf{Các tác nhân}         & Sinh viên                                                                                         \\
 	\hline
@@ -196,13 +147,6 @@
 \end{tabular}
 
 \subsection{Tạo CV}
-\begin{center}
-	\includegraphics[width=.7\textwidth]{../drawio/activity/create_CV.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ tạo CV}
-	\end{figure}
-\end{center}
 \begin{tabular}{|l|l|}
 	\hline
 	\textbf{Các tác nhân}         & Sinh viên                                             \\
@@ -224,13 +168,6 @@
 \end{tabular}
 
 \subsection{Đăng ký thực tập}
-\begin{center}
-	\includegraphics[width=.9\textwidth]{../drawio/activity/register_thuctap.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ đăng ký thực tập}
-	\end{figure}
-\end{center}
 \begin{tabular}{|l|l|}
 	\hline
 	\textbf{Các tác nhân}         & Sinh viên                                             \\
@@ -252,16 +189,9 @@
 \end{tabular}
 
 \subsection{Tra cứu thông tin}
-\begin{center}
-	\includegraphics[width=.3\textwidth]{../drawio/activity/search_info.png}
-	\begin{figure}[h]
-		\centering
-		\caption{Biểu đồ tìm kiếm}
-	\end{figure}
-\end{center}
-\begin{tabular}{|l|p{0.8\textwidth}|}
+\begin{tabular}{|l|p{0.7\textwidth}|}
 	\hline
-	\textbf{Các tác nhân}         & Sinh viên, giảng viên, giáo vụ, trưởng phòng, khách                     \\
+	\textbf{Các tác nhân}         & Sinh viên, giảng viên, cán bộ                     \\
 	\hline
 	\textbf{Mô tả}                & Tìm kiếm thông tin sinh viên, giảng viên, đề tài đồ án, vị trí thực tập \\
 	\hline
