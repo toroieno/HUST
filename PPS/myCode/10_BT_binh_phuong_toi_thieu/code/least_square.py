@@ -89,14 +89,15 @@ class LeastSquare:
 
         x = self.solve_linear_equations(A)
         # print(x)
-        x = x[::-1]
+        # x = x[::-1]
+        x.reverse()
         print('P(x)', x)
         draw_graph(self.x, x, self.x, self.y)
 
         return x
 
     def option_2(self):
-        self.x = radians(self.x)
+        self.x = [radians(x) for x in self.x]
         k = int(input('k= '))
         temp_a = [self.n]
 

@@ -5,108 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/document/algorithm/newton_cotez.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/ưunhuoc.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/algorithm/thuattoanbenlagrange" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/2_phan_tich_he_thong.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/2_phan_tich_he_thong.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/diagram/bieu_do_tuan_tu.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/diagram/bieu_do_tuan_tu.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/diagram/database.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/diagram/database.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/.$usecaseLecturer.drawio.dtmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/.$usecaseStudent.drawio.dtmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/.$usecasee.drawio.dtmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/usecaseAdmin.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/usecaseAdmin.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/usecaseCadres.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/usecaseCadres.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/usecaseLecturer.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/usecaseLecturer.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/usecaseStudent.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/usecaseStudent.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_BT_binh_phuong_toi_thieu/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_BT_ham_ghep_tron/code/spline.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_BT_ham_ghep_tron/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_BT_ham_ghep_tron/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_BT_Euler/code/euler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13_BT_RK/code/Runghe_Kutta.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/13_BT_RK/code/Runghe_Kutta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_BT_ADAMs/code/ADAM.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_BT_bai_toan_bien/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/15_BT_bai_toan_bien/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_BT_bai_toan_bien/code/boundery.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/15_BT_bai_toan_bien/code/boundery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16_BT_bai_toan_gia_tri_rieng/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/16_BT_bai_toan_gia_tri_rieng/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16_BT_bai_toan_gia_tri_rieng/code/eigenvalue.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/16_BT_bai_toan_gia_tri_rieng/code/eigenvalue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/buoi1_hoocner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/buoi1_hoocner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/code/BT1_hoocner_chia.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/code/BT1_hoocner_chia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/code/BT2_hoocner_nhan.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/code/BT2_hoocner_nhan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/1_BT_hoocner/input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/document/algorithm/spline" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/algorithm/Aiken_algorithm.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/algorithm/Aiken_algorithm.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/algorithm/Aiken_algorithm.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/algorithm/Aiken_algorithm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/algorithm/Lagrange_Algorithm.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/algorithm/Lagrange_Algorithm.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/algorithm/Lagrange_Algorithm.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/algorithm/Lagrange_Algorithm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/code/Lagrange.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/code/Lagrange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/mygraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/mygraph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_BT_lagrange/store/BT1_lagrange.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/2_BT_lagrange/store/BT1_lagrange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/algorithm/input_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/algorithm/input_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/algorithm/nsNewton_MocBatKy.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/algorithm/nsNewton_MocBatKy.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/algorithm/nsNewton_MocBatKy.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/algorithm/nsNewton_MocBatKy.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/algorithm/nsNewton_MocCachDeu.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/algorithm/nsNewton_MocCachDeu.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/algorithm/nsNewton_MocCachDeu.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/algorithm/nsNewton_MocCachDeu.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/code/nsNewtonMocBatKy.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/code/nsNewtonMocBatKy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/code/nsNewtonMocCachDeu.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/code/nsNewtonMocCachDeu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/store/BT1_newton.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/store/BT1_newton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/store/BT2_newton_cach_deu.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/store/BT2_newton_cach_deu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/store/NewtonBatKy.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/store/NewtonBatKy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_BT_newton/store/NewtonCachDeu.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/store/NewtonCachDeu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_BT_noi_suy_trung_tam/algorithm/algorithm_nstt.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/4_BT_noi_suy_trung_tam/algorithm/algorithm_nstt.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_BT_noi_suy_trung_tam/code/Gauss.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/4_BT_noi_suy_trung_tam/code/Gauss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_BT_noi_suy_trung_tam/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/4_BT_noi_suy_trung_tam/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_BT_noi_suy_trung_tam/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/4_BT_noi_suy_trung_tam/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_BT_stirling/algorithm/algorithm_stirling.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/5_BT_stirling/algorithm/algorithm_stirling.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_BT_stirling/algorithm/algorithm_stirling.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/5_BT_stirling/algorithm/algorithm_stirling.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_BT_stirling/code/Stirling.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/5_BT_stirling/code/Stirling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_BT_stirling/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/5_BT_stirling/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_BT_stirling/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/5_BT_stirling/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_BT_bessel/algorithm/algorithm_bessel.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/6_BT_bessel/algorithm/algorithm_bessel.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_BT_bessel/algorithm/algorithm_bessel.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/6_BT_bessel/algorithm/algorithm_bessel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_BT_bessel/code/Bessel.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/6_BT_bessel/code/Bessel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_BT_bessel/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/6_BT_bessel/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_BT_bessel/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/6_BT_bessel/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_BT_noi_suy_nguoc/algorithm/algorithm_noisuynguoc.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/7_BT_noi_suy_nguoc/algorithm/algorithm_noisuynguoc.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_BT_noi_suy_nguoc/algorithm/algorithm_noisuynguoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/7_BT_noi_suy_nguoc/algorithm/algorithm_noisuynguoc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_BT_noi_suy_nguoc/code/NoiSuyNguoc.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/7_BT_noi_suy_nguoc/code/NoiSuyNguoc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_BT_noi_suy_nguoc/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/7_BT_noi_suy_nguoc/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_BT_noi_suy_nguoc/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/7_BT_noi_suy_nguoc/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_BT_tinh_gan_dung_dao_ham/algorithm/algorithm_derivative.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/8_BT_tinh_gan_dung_dao_ham/algorithm/algorithm_derivative.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_BT_tinh_gan_dung_dao_ham/code/approximate_derivative.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/8_BT_tinh_gan_dung_dao_ham/code/approximate_derivative.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_BT_tinh_gan_dung_dao_ham/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/8_BT_tinh_gan_dung_dao_ham/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_BT_tinh_gan_dung_dao_ham/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/8_BT_tinh_gan_dung_dao_ham/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_BT_tinh_gan_dung_tich_phan/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_BT_tinh_gan_dung_tich_phan/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_BT_tinh_gan_dung_tich_phan/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CasualFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/CasualFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateOptimizeInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/CreateOptimizeInput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_input/stirling.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/test_input/stirling.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_input/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/test_input/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
     </list>
-    <list id="67afc481-d017-42af-a5f0-98d6c92ff7d9" name="Changes by Tung Nguyen" comment="">
-      <change beforePath="$PROJECT_DIR$/1_BT_hoocner/algorithm/thuattoanbenlagrange" beforeDir="false" afterPath="$PROJECT_DIR$/document/algorithm/least_quare.txt" afterDir="false" />
+    <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="">
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
     </list>
+    <list id="67afc481-d017-42af-a5f0-98d6c92ff7d9" name="Changes by Tung Nguyen" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py">
+      <ranges>
+        <range start1="91" end1="92" start2="91" end2="93" changelist="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" />
+        <range start1="98" end1="99" start2="99" end2="100" changelist="57bfc340-9475-4428-aa39-b37ff548c1b6" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
