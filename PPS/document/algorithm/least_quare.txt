@@ -1,0 +1,35 @@
+- option 1:
+
+- option 2:
+
+1. Thêm một cột chứa các giá trị 0 vào ma trận A.
+2. Với mỗi hàng i trong ma trận A:
+    a. Thiết lập phần tử chốt bằng giá trị của A[i][i].
+    b. Nếu phần tử chốt bằng 0, trả về None, biểu thị rằng hệ thống không có nghiệm duy nhất.
+    c. Với mỗi hàng j trong ma trận A mà j khác i:
+        i. Thiết lập hệ số bằng giá trị của A[j][i] chia cho phần tử chốt.
+        ii. Với mỗi cột k trong ma trận A từ i đến n+1:
+    1. Trừ đi hệ số lần A[i][k] từ A[j][k].
+    d. Với mỗi cột k trong ma trận A từ i đến n+1:
+    i. Chia A[i][k] cho phần tử chốt.
+3. Trích xuất giải pháp từ cột cuối cùng của ma trận A và trả về dưới dạng một danh sách.
+
+- option 3:
+1. Đọc dữ liệu từ tệp tin 'input.txt' và lưu các giá trị của x và y vào danh sách tương ứng.
+2. Tính số lượng điểm dữ liệu (n) bằng cách lấy độ dài của danh sách x.
+3. Tính logarit cơ số 10 của mỗi giá trị trong danh sách y ban đầu và lưu kết quả vào danh sách Y mới.
+4. Tạo ma trận A có kích thước 2x3 với các giá trị như sau:
+    a. Phần tử A[0][0] bằng số lượng điểm dữ liệu (n).
+    b. Phần tử A[0][1] bằng tổng các giá trị trong danh sách x.
+    c. Phần tử A[0][2] bằng tổng các giá trị trong danh sách Y.
+    d. Phần tử A[1][0] bằng tổng các giá trị trong danh sách x.
+    e. Phần tử A[1][1] bằng tổng bình phương các giá trị trong danh sách x.
+    f. Phần tử A[1][2] bằng tổng các tích của các giá trị tương ứng trong danh sách x và danh sách Y.
+5. Giải hệ phương trình tuyến tính bằng phương pháp Gauss-Jordan để tìm nghiệm x của hệ phương trình.
+6.  Tính giá trị a bằng 10 mũ nghiệm x[0].
+7. Tính giá trị b bằng nghiệm x[1] chia cho logarit tự nhiên của số e.
+8. In ra giá trị a và b.
+9. Trả về giá trị a và b.
+
+
+- option 4:
