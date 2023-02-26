@@ -96,12 +96,14 @@ class NewtonCotes:
             delta = abs(integral - temp_integral)/3
             print('{0:20}|{1:20}|{2:20}'.format(temp_h, temp_integral, delta))
 
+        print('số đoạn chia cần thiết: ', (self.b - self.a) / (2 * temp_h))
         return temp_integral
     # region Input
     # Example usage
     def choose_input(self):
         print('1. f, a, b, eps')
         print('2. x, y in file input.txt')
+        print('3. simpson lưới phủ')
         self.option = int(input('choose option 1 or 2: '))
         # khong can luoi phu - dung cong thuc M2
         if self.option == 1:
@@ -114,6 +116,8 @@ class NewtonCotes:
             self.n = len(self.x) - 1
             self.a = self.x[0]
             self.b = self.x[-1]
+        elif self.option == 3:
+            self.simpson_luoi_phu()
 
     # endregion
 
@@ -121,16 +125,17 @@ class NewtonCotes:
     def run(self):
         self.choose_input()
 
-        # I_nc, eps_nc = self.newton_cotes()
-        # print("Newton-Cotes method: ", I_nc, "+/-", eps_nc)
-        #
-        # I_trap, eps_trap = self.trapezoidal()
-        # print("Trapezoidal rule: ", I_trap, "+/-", eps_trap)
-        #
-        # I_simpson, eps_simpson = self.simpson()
-        # print("Simpson's rule: ", I_simpson, "+/-", eps_simpson)
+        if self.option != 3:
+            I_nc, eps_nc = self.newton_cotes()
+            print("Newton-Cotes method: ", I_nc, "+/-", eps_nc)
 
-        self.simpson_luoi_phu()
+            I_trap, eps_trap = self.trapezoidal()
+            print("Trapezoidal rule: ", I_trap, "+/-", eps_trap)
+
+            I_simpson, eps_simpson = self.simpson()
+            print("Simpson's rule: ", I_simpson, "+/-", eps_simpson)
+
+        # self.simpson_luoi_phu()
 
     # endregion
 

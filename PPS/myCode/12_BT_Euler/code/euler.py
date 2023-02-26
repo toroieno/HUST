@@ -122,19 +122,25 @@ class Euler:
             self.xf = 0.1  # giá trị cần tính
 
     # endregion
-
+    def draw_graph(self, x1, y1, x2, y2, x3, y3):
+        plt.plot(x1, y1, color="red", label="hiện")
+        plt.plot(x2, y2, color="blue", label="ẩn")
+        plt.plot(x3, y3, color="yellow", label="hình thang")
+        plt.legend()
+        plt.show()
     # region Main
     def run(self):
         option = 2 # chọn 1 hoặc 2
         self.input(option)
 
         if option == 1:
-            x, y = self.euler_forward()
-            print('Euler hiện: \n x = {0} \n y = {1}'.format(x, y))
-            x, y = self.euler_backward()
-            print('Euler ẩn: \n x = {0} \n y = {1}'.format(x, y))
-            x, y = self.trapezoidal()
-            print('Công thức hình thang: \n x = {0} \n y = {1}'.format(x, y))
+            x1, y1 = self.euler_forward()
+            print('Euler hiện: \n x = {0} \n y = {1}'.format(x1, y1))
+            x2, y2 = self.euler_backward()
+            print('Euler ẩn: \n x = {0} \n y = {1}'.format(x2, y2))
+            x3, y3 = self.trapezoidal()
+            print('Công thức hình thang: \n x = {0} \n y = {1}'.format(x3, y3))
+            self.draw_graph(x1, y1, x2, y2, x3, y3)
         elif option == 2:
             # Solve the ODE using Euler's Forward method
             t_euler_forward, y_euler_forward = self.euler_forward_eps()
@@ -154,6 +160,7 @@ class Euler:
             print("Euler ẩn: y({:.1f}) = {:.4f}".format(t_euler_backward[-1], y_euler_backward[-1]))
             print("Công thức hình thang: y({:.1f}) = {:.4f}".format(t_trapezoidal[-1], y_trapezoidal[-1]))
 
+            self.draw_graph(t_euler_forward, y_euler_forward, t_euler_backward, y_euler_backward, t_trapezoidal, y_trapezoidal)
     # endregion
 
 
