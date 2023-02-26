@@ -1,26 +1,24 @@
 \section{Đặc tả usecase}
-	\subsection*{Đăng nhập}
-		\begin{tabular}{|l|p{0.7\textwidth}|}
-			\hline
-			\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, cán bộ \\
-			\hline
-			\textbf{Mô tả}                & Đăng nhập                                           \\
-			\hline
-			\textbf{Kích hoạt}            & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
-			\hline
-			\textbf{Luồng chính}          & \makecell[l]{1. Chọn chức năng đăng nhập            \\ 2. Hiển thị màn hình đăng nhập \\ 3. Nhập tên đăng nhập và mật khẩu \\ 4. Hiển thị kiểm tra thông tin \\ 5. Nếu thành công chuyển tới giao diện chính \\ 6. Kết thúc} \\
-			\hline
-			\textbf{Các luồng thay thế}   & \makecell[l]{Mật khẩu không hợp lệ:                 \\ 1. Thông báo ra màn hình mật khẩu sai \\ 2. Quay lại bước 2 của luồng chính \\ Quên mật khẩu: \\ 1. Hiển thị màn hình nhập email \\ 2. Nhập và chọn chức năng quên mật khẩu \\ 3. Kiểm tra hợp lệ hệ thống gửi mail xác nhận \\ 4. Hiển thị thông báo thành công \\ 5. Kết thúc} \\
-			\hline
-			\textbf{Tiền điều kiện}       & Tài khoản trước đó đã được đăng ký                  \\
-			\hline
-			\textbf{Hậu điều kiện}        & Người dùng đăng nhập thành công                     \\
-			\hline
-			\textbf{Các yêu cầu đặc biệt} &                                                     \\
-			\hline
-		\end{tabular}
+\subsection*{Đăng nhập}
+	\begin{tabular}{|l|p{0.7\textwidth}|}
+		\hline
+		\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, cán bộ \\
+		\hline
+		\textbf{Mô tả}                & Đăng nhập                                           \\
+		\hline
+		\textbf{Kích hoạt}            & Người dùng nhấn vào nút "Đăng nhập" trên thanh menu \\
+		\hline
+		\textbf{Luồng chính}          & \makecell[l]{1. Chọn chức năng đăng nhập            \\ 2. Hiển thị màn hình đăng nhập \\ 3. Nhập tên đăng nhập và mật khẩu \\ 4. Hiển thị kiểm tra thông tin \\ 5. Nếu thành công chuyển tới giao diện chính \\ 6. Kết thúc} \\
+		\hline
+		\textbf{Các luồng thay thế}   & \makecell[l]{Mật khẩu không hợp lệ:                 \\ 1. Thông báo ra màn hình mật khẩu sai \\ 2. Quay lại bước 2 của luồng chính \\ Quên mật khẩu: \\ 1. Hiển thị màn hình nhập email \\ 2. Nhập và chọn chức năng quên mật khẩu \\ 3. Kiểm tra hợp lệ hệ thống gửi mail xác nhận \\ 4. Hiển thị thông báo thành công \\ 5. Kết thúc} \\
+		\hline
+		\textbf{Tiền điều kiện}       & Tài khoản trước đó đã được đăng ký                  \\
+		\hline
+		\textbf{Hậu điều kiện}        & Người dùng đăng nhập thành công                     \\
+		\hline
+	\end{tabular}
 
-	\subsection*{Đăng ký}
+\subsection*{Đăng ký}
 	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}       & Admin, sinh viên, giảng viên                                        \\
@@ -37,11 +35,9 @@
 		\hline
 		\textbf{Hậu điều kiện}      & Người dùng đăng xuất thành công                                     \\
 		\hline
-		\textbf{Yêu cầu đặc biệt}   &                                                                     \\
-		\hline
 	\end{tabular}
 
-	\subsection*{Đăng xuất}
+\subsection*{Đăng xuất}
 	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Admin, sinh viên, giảng viên, cán bộ                              \\
@@ -58,11 +54,9 @@
 		\hline
 		\textbf{Hậu điều kiện}        & Người dùng đăng xuất thành công                                                  \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                                                  \\
-		\hline
 	\end{tabular}
 
-	\subsection*{Quên mật khẩu}
+\subsection*{Quên mật khẩu}
 	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Sinh viên, giảng viên, cán bộ                            \\
@@ -79,11 +73,9 @@
 		\hline
 		\textbf{Hậu điều kiện}        & mật khẩu mới của tài khoản email xác nhận               \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                         \\
-		\hline
 	\end{tabular}
 
-	\subsection*{Cập nhật thông tin}
+\subsection*{Cập nhật thông tin}
 	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Sinh viên, giảng viên                                                              \\
@@ -100,11 +92,9 @@
 		\hline
 		\textbf{Hậu điều kiện}        & cập nhật thông tin thành công                                                             \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                                                           \\
-		\hline
 	\end{tabular}
 
-	\subsection*{Thống kê}
+\subsection*{Thống kê}
 	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Admin, giảng viên, cán bộ                                                                                           \\
@@ -121,7 +111,23 @@
 		\hline
 		\textbf{Hậu điều kiện}        & Hiển thị biểu đồ thống kê chi tiết                                                                                                 \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                                                                                                    \\
+	\end{tabular}
+\subsection*{Tra cứu thông tin}
+	\begin{tabular}{|l|p{0.7\textwidth}|}
+		\hline
+		\textbf{Các tác nhân}         & Sinh viên, giảng viên, cán bộ                     \\
+		\hline
+		\textbf{Mô tả}                & Tìm kiếm thông tin sinh viên, giảng viên, đề tài đồ án, vị trí thực tập \\
+		\hline
+		\textbf{Kích hoạt}            & Người dùng nhấn nút "tìm kiếm" trên thanh menu                          \\
+		\hline
+		\textbf{Luồn chính}           & \makecell[l]{1. Hệ thống tiếp nhận thông tin                            \\ 2. Hệ thống tìm kiếm trong cơ sở dữ liệu \\ 3. Hệ thống hiển thị kết quả \\ 4. Kết thúc} \\
+		\hline
+		\textbf{Các luồng thay thế}   & không có                                                                \\
+		\hline
+		\textbf{Tiền điều kiện}       & không có                                                                \\
+		\hline
+		\textbf{Hậu điều kiện}        & không có                                                                \\
 		\hline
 	\end{tabular}
 
@@ -142,12 +148,10 @@
 		\hline
 		\textbf{Hậu điều kiện}        &                                                                                                   \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                                                                   \\
-		\hline
 	\end{tabular}
 
 	\subsection*{Tạo CV}
-	\begin{tabular}{|l|l|}
+	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Sinh viên                                             \\
 		\hline
@@ -163,12 +167,10 @@
 		\hline
 		\textbf{Hậu điều kiện}        &                                                       \\
 		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                       \\
-		\hline
 	\end{tabular}
 
 	\subsection*{Đăng ký thực tập}
-	\begin{tabular}{|l|l|}
+	\begin{tabular}{|l|p{0.7\textwidth}|}
 		\hline
 		\textbf{Các tác nhân}         & Sinh viên                                             \\
 		\hline
@@ -183,28 +185,5 @@
 		\textbf{Tiền điều kiện}       & Sinh viên đã đăng nhập trước đó                       \\
 		\hline
 		\textbf{Hậu điều kiện}        &                                                       \\
-		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                       \\
-		\hline
-	\end{tabular}
-
-	\subsection*{Tra cứu thông tin}
-	\begin{tabular}{|l|p{0.7\textwidth}|}
-		\hline
-		\textbf{Các tác nhân}         & Sinh viên, giảng viên, cán bộ                     \\
-		\hline
-		\textbf{Mô tả}                & Tìm kiếm thông tin sinh viên, giảng viên, đề tài đồ án, vị trí thực tập \\
-		\hline
-		\textbf{Kích hoạt}            & Người dùng nhấn nút "tìm kiếm" trên thanh menu                          \\
-		\hline
-		\textbf{Luồn chính}           & \makecell[l]{1. Hệ thống tiếp nhận thông tin                            \\ 2. Hệ thống tìm kiếm trong cơ sở dữ liệu \\ 3. Hệ thống hiển thị kết quả \\ 4. Kết thúc} \\
-		\hline
-		\textbf{Các luồng thay thế}   & không có                                                                \\
-		\hline
-		\textbf{Tiền điều kiện}       & không có                                                                \\
-		\hline
-		\textbf{Hậu điều kiện}        & không có                                                                \\
-		\hline
-		\textbf{Các yêu cầu đặc biệt} &                                                                         \\
 		\hline
 	\end{tabular}
