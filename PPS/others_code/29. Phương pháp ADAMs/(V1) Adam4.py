@@ -100,15 +100,15 @@ def ABM4thOrder(func, yinit, xspan, h):
 
 
 def myFunc(x, y):
-    return math.e**(-2*x)-2*y
+    return (x + 2*y) / (x*x + 2*y*y)
 
 
-h = 0.2
+h = 0.1
 
 x0 = 0
-xn = 2
+xn = 3
 
-y0 = 0.1
+y0 = 1
 
 
 #############################   \INPUT GOES HERE

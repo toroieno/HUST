@@ -125,7 +125,7 @@ class Euler:
 
     # region Main
     def run(self):
-        option = 2  # chọn 1 hoặc 2
+        option = 2 # chọn 1 hoặc 2
         self.input(option)
 
         if option == 1:
@@ -144,6 +144,10 @@ class Euler:
 
             # Solve the ODE using the Trapezoidal method
             t_trapezoidal, y_trapezoidal = self.trapezoidal_eps()
+
+            print('Euler hiện: \n x = {0} \n y = {1}'.format(t_euler_forward, y_euler_forward))
+            print('Euler ẩn: \n x = {0} \n y = {1}'.format(t_euler_backward, y_euler_backward))
+            print('Công thức hình thang: \n x = {0} \n y = {1}'.format(t_trapezoidal, y_trapezoidal))
 
             # Print the solutions at the final time step
             print("Euler hiện: y({:.1f}) = {:.4f}".format(t_euler_forward[-1], y_euler_forward[-1]))

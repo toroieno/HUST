@@ -16,11 +16,11 @@ class Adam:
     # region Input
     def input(self):
         # cho khoảng để tính - input x0 < x < x_end
-        self.f = lambda x, y: x * y / 2
-        self.y0 = 1
+        self.f = lambda x, y: -(2*x + y) / (2*x*x + y*y)
+        self.y0 = 5
         self.x0 = 0
         self.h = 0.1
-        self.x_end = 1
+        self.x_end = 3
 
     # endregion
 
@@ -35,10 +35,10 @@ class Adam:
                 y[i] = y[i - 1] + self.h / 2 * (3 * self.f(x[i - 1], y[i - 1]) - self.f(x[i - 2], y[i - 2]))
         elif order == 3:
             y[1] = y[0] + self.h / 12 * (
-                        23 * self.f(x[0], y[0]) - 16 * self.f(x[0] - self.h, self.y0) + 5 * self.f(x[0] - 2 * self.h,
-                                                                                                   self.y0))
+                    23 * self.f(x[0], y[0]) - 16 * self.f(x[0] - self.h, self.y0) + 5 * self.f(x[0] - 2 * self.h,
+                                                                                               self.y0))
             y[2] = y[1] + self.h / 12 * (
-                        23 * self.f(x[1], y[1]) - 16 * self.f(x[0], y[0]) + 5 * self.f(x[0] - self.h, y[0]))
+                    23 * self.f(x[1], y[1]) - 16 * self.f(x[0], y[0]) + 5 * self.f(x[0] - self.h, y[0]))
             for i in range(3, len(x)):
                 y[i] = y[i - 1] + self.h / 12 * (
                         23 * self.f(x[i - 1], y[i - 1]) - 16 * self.f(x[i - 2], y[i - 2]) + 5 * self.f(x[i - 3],
@@ -56,8 +56,8 @@ class Adam:
                 x[0] - self.h, y[0]))
             for i in range(4, len(x)):
                 y[i] = y[i - 1] + self.h / 24 * (
-                            55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
-                        i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
+                        55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
+                    i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
         else:
             raise ValueError("Invalid order")
         return x, y
@@ -80,20 +80,20 @@ class Adam:
                         23 * self.f(x[i - 1], y[i - 1]) - 16 * self.f(x[i - 2], y[i - 2]) + 5 * self.f(x[i - 3],
                                                                                                        y[i - 3]))
                 y[i] = y[i - 1] + self.h / 12 * (
-                            5 * self.f(x[i], y_pred) + 8 * self.f(x[i - 1], y[i - 1]) - self.f(x[i - 2], y[i - 2]))
+                        5 * self.f(x[i], y_pred) + 8 * self.f(x[i - 1], y[i - 1]) - self.f(x[i - 2], y[i - 2]))
         elif order == 4:
             y[1] = y[0] + self.h / 24 * (
-                        9 * self.f(x[0], y[0]) + 19 * self.f(x[1], y[1]) - 5 * self.f(x[2], y[2]) + self.f(x[3], y[3]))
+                    9 * self.f(x[0], y[0]) + 19 * self.f(x[1], y[1]) - 5 * self.f(x[2], y[2]) + self.f(x[3], y[3]))
             y[2] = y[1] + self.h / 24 * (
-                        self.f(x[0], y[0]) - 5 * self.f(x[1], y[1]) + 19 * self.f(x[2], y[2]) + 9 * self.f(x[3], y[3]))
+                    self.f(x[0], y[0]) - 5 * self.f(x[1], y[1]) + 19 * self.f(x[2], y[2]) + 9 * self.f(x[3], y[3]))
             for i in range(3, len(x)):
                 y_pred = y[i - 1] + self.h / 24 * (
-                            55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
-                        i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
+                        55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
+                    i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
                 y[i] = y[i - 1] + self.h / 24 * (
-                            9 * self.f(x[i], y_pred) + 19 * self.f(x[i - 1], y[i - 1]) - 5 * self.f(x[i - 2],
-                                                                                                    y[i - 2]) + self.f(
-                        x[i - 3], y[i - 3]))
+                        9 * self.f(x[i], y_pred) + 19 * self.f(x[i - 1], y[i - 1]) - 5 * self.f(x[i - 2],
+                                                                                                y[i - 2]) + self.f(
+                    x[i - 3], y[i - 3]))
         else:
             raise ValueError("Invalid order")
         return x, y
@@ -114,20 +114,20 @@ class Adam:
             y[2] = y[1] + self.h / 2 * (3 * self.f(x[1], y[1]) - self.f(x[0], y[0]))
             for i in range(3, len(x)):
                 y[i] = y[i - 1] + self.h / 12 * (
-                            23 * self.f(x[i - 1], y[i - 1]) - 16 * self.f(x[i - 2], y[i - 2]) + 5 * self.f(x[i - 3],
-                                                                                                           y[i - 3]))
+                        23 * self.f(x[i - 1], y[i - 1]) - 16 * self.f(x[i - 2], y[i - 2]) + 5 * self.f(x[i - 3],
+                                                                                                       y[i - 3]))
         elif order == 4:
             y[1] = y[0] + self.h * self.f(x[0], y[0])
             y[2] = y[1] + self.h / 2 * (3 * self.f(x[1], y[1]) - self.f(x[0], y[0]))
             y[3] = y[2] + self.h / 12 * (23 * self.f(x[2], y[2]) - 16 * self.f(x[1], y[1]) + 5 * self.f(x[0], y[0]))
             for i in range(4, len(x)):
                 y_pred = y[i - 1] + self.h / 24 * (
-                            55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
-                        i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
+                        55 * self.f(x[i - 1], y[i - 1]) - 59 * self.f(x[i - 2], y[i - 2]) + 37 * self.f(x[i - 3], y[
+                    i - 3]) - 9 * self.f(x[i - 4], y[i - 4]))
                 y[i] = y[i - 1] + self.h / 24 * (
-                            9 * self.f(x[i], y_pred) + 19 * self.f(x[i - 1], y[i - 1]) - 5 * self.f(x[i - 2],
-                                                                                                    y[i - 2]) + self.f(
-                        x[i - 3], y[i - 3]))
+                        9 * self.f(x[i], y_pred) + 19 * self.f(x[i - 1], y[i - 1]) - 5 * self.f(x[i - 2],
+                                                                                                y[i - 2]) + self.f(
+                    x[i - 3], y[i - 3]))
 
 
         else:
@@ -140,26 +140,28 @@ class Adam:
     def run(self):
         self.input()
 
-        x, y = self.AB(2)
-        print("AB-2 ", x, y)
-        x, y = self.AB(3)
-        print("AB-3 ", x, y)
+        # x, y = self.AB(2)
+        # print("AB-2 ", x, y)
+        # x, y = self.AB(3)
+        # print("AB-3 ", x, y)
         x, y = self.AB(4)
-        print("AB-4 ", x, y)
+        print("AB-4 \n {0} \n {1}".format(x, y))
+        plt.scatter(x, y)
+        plt.show()
 
-        x, y = self.AM(2)
-        print("AM-2 ", x, y)
-        x, y = self.AM(3)
-        print("AM-3 ", x, y)
+        # x, y = self.AM(2)
+        # print("AM-2 ", x, y)
+        # x, y = self.AM(3)
+        # print("AM-3 ", x, y)
         x, y = self.AM(4)
-        print("AM-4 ", x, y)
+        print("AM-4 \n {0} \n {1}".format(x, y))
 
-        x, y = self.AB_AM(2)
-        print("AB_AM-2 ", x, y)
-        x, y = self.AB_AM(3)
-        print("AB_AM-3 ", x, y)
+        # x, y = self.AB_AM(2)
+        # print("AB_AM-2 ", x, y)
+        # x, y = self.AB_AM(3)
+        # print("AB_AM-3 ", x, y)
         x, y = self.AB_AM(4)
-        print("AB_AM-4 ", x, y)
+        print("AB-AM-4 \n {0} \n {1}".format(x, y))
 
     # endregion
 
