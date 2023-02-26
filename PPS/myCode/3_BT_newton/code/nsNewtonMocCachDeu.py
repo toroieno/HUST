@@ -93,7 +93,9 @@ class Newton:
         t_value = t(c, self.x[0], self.h) if flag else t(c, self.x[-1], self.h)
 
         print("t = ", t_value)
+
         print("\nP(x = %f) = " % c, hoocne_divide(p, t_value).pop())
+        print("\nP'(x = %f) = " % c, (Degf_k(p, 1, t_value)))
 
     # endregion
 

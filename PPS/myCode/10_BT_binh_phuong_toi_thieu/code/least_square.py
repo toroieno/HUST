@@ -109,7 +109,19 @@ class LeastSquare:
         eps = self.caculate_eps(y_new, self.y)
         # self.a, self.b, self.eps = a, b, eps
         print('sai so: eps = ', eps)
+
+        t_value = float(input('tính tại t = '))
+
+        print("\nP(t = {0}) = {1}".format(t_value, hoocne_divide(x, t_value).pop()))
+        print("\nP'(t = {0}) = {1}".format(t_value, (Degf_k(x, 1, t_value))))
+
+        y = float(input('P(t) = '))
+        p_x = x.copy()
+        p_x[-1] -= y
+        print('Giải phương trình trên ta được bộ nghiệm là: ', np.roots(p_x))
+
         draw_graph(self.x, x, self.x, self.y)
+
 
         return x
 

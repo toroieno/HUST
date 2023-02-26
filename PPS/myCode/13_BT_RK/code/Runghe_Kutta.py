@@ -109,11 +109,12 @@ class RungheKutta:
     # region Input
     def input(self):
         # cho khoảng để tính - input x0 < x < x_end
-        self.f = lambda x, y: x + y
-        self.y0 = 1
+        # self.f = lambda x, y: -0.35*y + (0.35*x*x*y) / (1+15*x*x)
+        self.f = lambda x, y: 1.5*(1-x/25)*x-(0.5*x*x*y)/(1+15*x*x)
+        self.y0 = 6
         self.x0 = 0
         self.h = 0.1
-        self.x_end = 0.5
+        self.x_end = 10
 
     # endregion
 
@@ -133,7 +134,6 @@ class RungheKutta:
         plt.ylabel('y')
         plt.show()
     # endregion
-
     # region Main
     def run(self):
         self.input()

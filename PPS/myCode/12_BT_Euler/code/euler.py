@@ -28,8 +28,8 @@ class Euler:
         x = np.arange(self.x0, self.xf + self.h, self.h)
         y = np.zeros_like(x)
         y[0] = self.y0
-        for i in range(len(x) - 1):
-            y[i + 1] = y[i] + self.h * self.f(x[i + 1], y[i + 1])
+        for i in range(1, len(x)):
+            y[i] = y[i-1] + self.h * self.f(x[i], y[i -1])
         return x, y
 
     def trapezoidal(self):
@@ -106,11 +106,11 @@ class Euler:
     def input(self, option):
         # cho khoảng để tính - input x0 < x < xf
         if option == 1:
-            self.f = lambda x, y: x + y
+            self.f = lambda x, y: x - 2*y
             self.y0 = 1
-            self.x0 = 0
-            self.h = 1 / 20
-            self.xf = 0.5
+            self.x0 = 3
+            self.h = 0.1
+            self.xf = 6
 
         # cho sai số eps, tính tại y(xf)
         elif option == 2:
@@ -130,7 +130,7 @@ class Euler:
         plt.show()
     # region Main
     def run(self):
-        option = 2 # chọn 1 hoặc 2
+        option = 1 # chọn 1 hoặc 2
         self.input(option)
 
         if option == 1:

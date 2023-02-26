@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="add eps for least square">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/13_BT_RK/code/Runghe_Kutta.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/13_BT_RK/code/Runghe_Kutta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/3_BT_newton/code/nsNewtonMocCachDeu.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/code/nsNewtonMocCachDeu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/3_BT_newton/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/3_BT_newton/input.txt" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
@@ -65,8 +70,8 @@
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\12_BT_Euler" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.euler">
-    <configuration name="create_input" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Runghe_Kutta">
+    <configuration name="Runghe_Kutta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +79,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/13_BT_RK/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/13_BT_RK/code/Runghe_Kutta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="nsNewtonMocCachDeu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/3_BT_newton/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/3_BT_newton/code/nsNewtonMocCachDeu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.euler" />
+        <item itemvalue="Python.Runghe_Kutta" />
         <item itemvalue="Python.newton_cotez" />
+        <item itemvalue="Python.euler" />
         <item itemvalue="Python.least_square" />
-        <item itemvalue="Python.create_input" />
-        <item itemvalue="Python.spline" />
+        <item itemvalue="Python.nsNewtonMocCachDeu" />
       </list>
     </recent_temporary>
   </component>
