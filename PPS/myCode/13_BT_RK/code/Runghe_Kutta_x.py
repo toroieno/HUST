@@ -1,7 +1,7 @@
 from myCode.CasualFunction import *
 
 
-class RungheKutta:
+class RungheKutta_x:
 
     # region Initial Variable
     def __init__(self):
@@ -110,11 +110,11 @@ class RungheKutta:
     def input(self):
         # cho khoảng để tính - input x0 < x < x_end
         # self.f = lambda x, y: -0.35*y + (0.35*x*x*y) / (1+15*x*x)
-        self.f = lambda x, y: x + y
-        self.y0 = 1
+        self.f = lambda x, y: 1.5*(1-y/25)*y-(0.5*y*y*x)/(1+15*y*y)
+        self.y0 = 6
         self.x0 = 0
         self.h = 0.1
-        self.x_end = 1
+        self.x_end = 9.9
 
     # endregion
 
@@ -137,17 +137,18 @@ class RungheKutta:
     # region Main
     def run(self):
         self.input()
-        x_rk2, y_rk2 = self.rk2()
-        print('rk2: \n x = {0} \n y =  {1}'.format(x_rk2, y_rk2))
-        x_rk3, y_rk3 = self.rk3()
-        print('rk3: \n x = {0} \n y =  {1}'.format(x_rk3, y_rk3))
+        # x_rk2, y_rk2 = self.rk2()
+        # print('rk2: \n x = {0} \n y =  {1}'.format(x_rk2, y_rk2))
+        # x_rk3, y_rk3 = self.rk3()
+        # print('rk3: \n x = {0} \n y =  {1}'.format(x_rk3, y_rk3))
         x_rk4, y_rk4 = self.rk4()
-        print('rk4: \n x = {0} \n y =  {1}'.format(x_rk4, y_rk4))
-        self.draw_graph()
+        # print('rk4: \n x = {0} \n y =  {1}'.format(x_rk4, y_rk4))
+        # self.draw_graph()
+        return y_rk4
 
     # endregion
 
 
 if __name__ == '__main__':
-    bt = RungheKutta()
+    bt = RungheKutta_x()
     bt.run()
