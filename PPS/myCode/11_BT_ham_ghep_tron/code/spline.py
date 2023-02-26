@@ -81,18 +81,14 @@ class Spline:
     def spline_3(self):
         h = [0]
         h.extend(np.diff(self.x))
-        print('h:', h)
         n = len(self.x) - 1
 
         dh_0 = (self.y[1] - self.y[0]) / (self.x[1] - self.x[0])
         dh_n = (self.y[n] - self.y[n - 1]) / (self.x[n] - self.x[n - 1])
 
         d = np.empty(n + 1)
-        print('d:', d)
         d[0] = 6 / h[1] * ((self.y[1] - self.y[0]) / h[1] - dh_0)
         d[n] = 6 / h[n - 1] * (dh_n - (self.y[n] - self.y[n - 1]) / h[n - 1])
-        print('d0', d[0])
-        print('dn', d[n])
         lamda = np.zeros(n + 1)
         muy = np.zeros(n + 1)
         for i in range(1, n):
@@ -100,10 +96,7 @@ class Spline:
             muy[i] = h[i] / (h[i] + h[i + 1])
             d[i] = 6 / (h[i] + h[i + 1]) * ((self.y[i + 1] - self.y[i]) / h[i + 1] - (self.y[i] - self.y[i - 1]) / h[i])
 
-        print('lamda', lamda)
-        print('muy', muy)
         m = self.truy_duoi(muy, lamda, d, n)
-        print('m:', m)
         A = [0]
         B = [0]
         a = [0]
@@ -133,6 +126,25 @@ class Spline:
             hsD = a[i] * (self.x[i] ** 3) - b[i] * (self.x[i - 1] ** 3) + A[i] * self.x[i] - B[i] * self.x[i - 1]
             p_x = [hsA, hsB, hsC, hsD]
             self.p.append(p_x)
+
+        for each in self.p:
+            print('p: ', each)
+
+        while True:
+            x_0 = float(input('nhập giá trị cần tính: x = '))
+            self.calculate_x(x_0)
+            flag = input('continue?(y/n)')
+            if flag != 'y':
+                break
+
+    def calculate_x(self, x_0):
+        # print(x_0)
+        # print(self.x)
+        for i in range(len(self.x)):
+            if x_0 > self.x[i]:
+                continue
+            print('P({0}) = {1}'.format(x_0, f_x(self.p[i-1], x_0)))
+            break
 
     # endregion
 
@@ -172,6 +184,7 @@ class Spline:
             else:
                 print('end.')
                 break
+
             self.draw_graph()
 
     # endregion
