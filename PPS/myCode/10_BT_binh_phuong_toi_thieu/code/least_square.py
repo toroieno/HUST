@@ -210,6 +210,7 @@ class LeastSquare:
         return a, b, eps
 
     # endregion
+    # endregion
 
     # region Eps
     def caculate_eps(self, arr_new, arr_old):

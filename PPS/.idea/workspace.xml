@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/README.md" afterDir="false" />
+    <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="add eps for least square">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
@@ -67,28 +65,7 @@
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\12_BT_Euler" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.least_square">
-    <configuration name="ADAM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PPS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/14_BT_ADAMs/code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.newton_cotez">
     <configuration name="create_input" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,6 +100,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="newton_cotez" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PPS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.newton_cotez" />
         <item itemvalue="Python.least_square" />
         <item itemvalue="Python.create_input" />
         <item itemvalue="Python.spline" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.ADAM" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +193,21 @@
       <option name="presentableId" value="Default" />
       <updated>1671000809200</updated>
     </task>
+    <task id="LOCAL-00001" summary="add eps for least square">
+      <created>1677396481073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677396481074</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add eps for least square">
+      <created>1677396511729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677396511729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +221,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add eps for least square" />
+    <option name="LAST_COMMIT_MESSAGE" value="add eps for least square" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -220,6 +237,11 @@
           <url>file://$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py</url>
           <line>98</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

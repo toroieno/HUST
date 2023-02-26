@@ -10,9 +10,9 @@ class NewtonCotes:
         self.y = None
         self.f = lambda x: 1 / (x ** 2 + 1)
         self.a = 0
-        self.b = 2
+        self.b = 3
         self.n = None
-        self.eps = 5e-7
+        self.eps = 5e-9
         self.option = 1
 
     # endregion
@@ -59,7 +59,44 @@ class NewtonCotes:
         return integral, self.eps
 
     # endregion
+    def simpson_luoi_phu(self):
+        print('{0:20}|{1:20}|{2:20}'.format('h', 'integral', 'delta'))
+        h = (self.b - self.a) / 2
+        self.n = int((self.b - self.a) / (2 * h))
+        self.x = np.linspace(self.a, self.b, 2 * self.n + 1)
+        self.y = self.f(self.x)
+        coef = np.ones(2 * self.n + 1)
+        coef[1:2 * self.n:2] = 4
+        coef[2:2 * self.n - 1:2] = 2
+        integral = (h / 3) * np.sum(coef * self.y)
+        print('{0:20}|{1:20}|{2:20}'.format(h, integral, ' '))
 
+        temp_h = h / 2
+        self.n = int((self.b - self.a) / (2 * temp_h))
+        self.x = np.linspace(self.a, self.b, 2 * self.n + 1)
+        self.y = self.f(self.x)
+        coef = np.ones(2 * self.n + 1)
+        coef[1:2 * self.n:2] = 4
+        coef[2:2 * self.n - 1:2] = 2
+        temp_integral = (temp_h / 3) * np.sum(coef * self.y)
+        delta = abs(integral - temp_integral)/3
+        print(self.eps)
+        print('{0:20}|{1:20}|{2:20}'.format(temp_h, temp_integral, delta))
+        while delta > self.eps:
+            integral = temp_integral
+            h = temp_h
+            temp_h = h / 2
+            self.n = int((self.b - self.a) / (2 * temp_h))
+            self.x = np.linspace(self.a, self.b, 2 * self.n + 1)
+            self.y = self.f(self.x)
+            coef = np.ones(2 * self.n + 1)
+            coef[1:2 * self.n:2] = 4
+            coef[2:2 * self.n - 1:2] = 2
+            temp_integral = (temp_h / 3) * np.sum(coef * self.y)
+            delta = abs(integral - temp_integral)/3
+            print('{0:20}|{1:20}|{2:20}'.format(temp_h, temp_integral, delta))
+
+        return temp_integral
     # region Input
     # Example usage
     def choose_input(self):
@@ -84,14 +121,16 @@ class NewtonCotes:
     def run(self):
         self.choose_input()
 
-        I_nc, eps_nc = self.newton_cotes()
-        print("Newton-Cotes method: ", I_nc, "+/-", eps_nc)
+        # I_nc, eps_nc = self.newton_cotes()
+        # print("Newton-Cotes method: ", I_nc, "+/-", eps_nc)
+        #
+        # I_trap, eps_trap = self.trapezoidal()
+        # print("Trapezoidal rule: ", I_trap, "+/-", eps_trap)
+        #
+        # I_simpson, eps_simpson = self.simpson()
+        # print("Simpson's rule: ", I_simpson, "+/-", eps_simpson)
 
-        I_trap, eps_trap = self.trapezoidal()
-        print("Trapezoidal rule: ", I_trap, "+/-", eps_trap)
-
-        I_simpson, eps_simpson = self.simpson()
-        print("Simpson's rule: ", I_simpson, "+/-", eps_simpson)
+        self.simpson_luoi_phu()
 
     # endregion
 
