@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/diagram/bieu_do_tuan_tu.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/diagram/bieu_do_tuan_tu.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
     </list>
-    <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="">
-      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
-    </list>
+    <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="67afc481-d017-42af-a5f0-98d6c92ff7d9" name="Changes by Tung Nguyen" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py">
-      <ranges>
-        <range start1="91" end1="92" start2="91" end2="93" changelist="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" />
-        <range start1="98" end1="99" start2="99" end2="100" changelist="57bfc340-9475-4428-aa39-b37ff548c1b6" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,11 +59,11 @@
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\9_BT_tinh_gan_dung_tich_phan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\document\algorithm" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\document" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\myCode" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\12_BT_Euler" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\10_BT_binh_phuong_toi_thieu\code" />
-      <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\9_BT_tinh_gan_dung_tich_phan\code" />
     </key>
   </component>
   <component name="RunManager" selected="Python.least_square">

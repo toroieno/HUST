@@ -1,3 +1,4 @@
+\contentsline {chapter}{Mở đầu}{1}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Tổng quan về đề tài}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Lý do chọn đề tài}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Yêu cầu của bài toán}{4}{section.1.2}%
@@ -23,9 +24,8 @@
 \contentsline {subsection}{\numberline {2.4.9}Đăng ký thực tập}{16}{subsection.2.4.9}%
 \contentsline {subsection}{\numberline {2.4.10}Tra cứu thông tin}{16}{subsection.2.4.10}%
 \contentsline {section}{\numberline {2.5}Biểu đồ tuần tự}{16}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Thiết kế hệ thống}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sơ đồ thực thể liên kết}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Chi tiết các bảng}{30}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Giao diện}{33}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Tổng kết}{34}{chapter.5}%
-\contentsline {chapter}{Tài liệu tham khảo}{35}{chapter*.4}%
+\contentsline {chapter}{\numberline {3}Thiết kế hệ thống}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sơ đồ thực thể liên kết}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Chi tiết các bảng}{29}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Tổng kết}{32}{chapter.4}%
+\contentsline {chapter}{Tài liệu tham khảo}{33}{chapter*.4}%
