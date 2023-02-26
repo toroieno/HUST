@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/document/algorithm/Euler.drawio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/algorithm/Spline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/luoi phu.drawio.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PPS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/SPLINE.py" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/SPLINE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/input.txt" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
-    <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="">
-      <change beforePath="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py" afterDir="false" />
-    </list>
+    <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
     <list id="67afc481-d017-42af-a5f0-98d6c92ff7d9" name="Changes by Tung Nguyen" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,39 +32,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py">
-      <ranges>
-        <range start1="102" end1="103" start2="102" end2="103" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="105" end1="106" start2="105" end2="106" changelist="57bfc340-9475-4428-aa39-b37ff548c1b6" />
-        <range start1="108" end1="109" start2="108" end2="109" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="110" end1="111" start2="110" end2="111" changelist="57bfc340-9475-4428-aa39-b37ff548c1b6" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/myCode/14_BT_ADAMs/code/ADAM.py">
-      <ranges>
-        <range start1="18" end1="20" start2="18" end2="20" changelist="57bfc340-9475-4428-aa39-b37ff548c1b6" />
-        <range start1="22" end1="23" start2="22" end2="23" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="37" end1="39" start2="37" end2="39" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="40" end1="41" start2="40" end2="41" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="58" end1="60" start2="58" end2="60" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="82" end1="83" start2="82" end2="83" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="85" end1="86" start2="85" end2="86" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="87" end1="88" start2="87" end2="88" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="90" end1="92" start2="90" end2="92" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="93" end1="96" start2="93" end2="96" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="116" end1="118" start2="116" end2="118" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="124" end1="126" start2="124" end2="126" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="127" end1="130" start2="127" end2="130" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="142" end1="146" start2="142" end2="146" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="147" end1="148" start2="147" end2="150" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="149" end1="153" start2="151" end2="155" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="154" end1="155" start2="156" end2="157" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="156" end1="160" start2="158" end2="162" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-        <range start1="161" end1="162" start2="163" end2="164" changelist="e446a10f-9162-4640-84a2-5a819d05af41" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,14 +64,14 @@
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\9_BT_tinh_gan_dung_tich_phan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Study\20221\HUST_Trien\PPS\document\algorithm" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\document" />
+      <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\document\algorithm" />
+      <recent name="D:\Study\20221\HUST_Trien\PPS\document\algorithm" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\myCode" />
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\12_BT_Euler" />
-      <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\10_BT_binh_phuong_toi_thieu\code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ADAM">
+  <component name="RunManager" selected="Python.spline">
     <configuration name="ADAM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="euler (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="spline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,11 +143,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/12_BT_Euler/code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/12_BT_Euler/code/euler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="least_square" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,11 +164,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spline" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.ADAM" />
         <item itemvalue="Python.(V1) Adam4" />
         <item itemvalue="Python.Runghe_Kutta" />
-        <item itemvalue="Python.euler (1)" />
-        <item itemvalue="Python.least_square" />
       </list>
     </recent_temporary>
   </component>
@@ -246,5 +211,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

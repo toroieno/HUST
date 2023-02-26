@@ -3,6 +3,8 @@ from math import sqrt
 
 
 class NewtonCotes:
+
+    # region Initial Variables
     def __init__(self):
         self.x = None
         self.y = None
@@ -13,6 +15,9 @@ class NewtonCotes:
         self.eps = 5e-7
         self.option = 1
 
+    # endregion
+
+    # region Newton Cotez
     def newton_cotes(self):
         h = (self.b - self.a) / self.n
         coef = np.ones(self.n + 1)
@@ -25,6 +30,9 @@ class NewtonCotes:
 
         return integral, self.eps
 
+    # endregion
+
+    # region Trapezoidal - hinh thang
     def trapezoidal(self):
         h = (self.b - self.a) / self.n
         integral = h * (np.sum(self.y) - 0.5 * (self.y[0] + self.y[self.n]))
@@ -33,6 +41,9 @@ class NewtonCotes:
             self.eps = ((self.b - self.a) * h ** 2 / 12) * d2f_max
         return integral, self.eps
 
+    # endregion
+
+    # region Simpson
     def simpson(self):
         self.x = np.linspace(self.a, self.b, 2 * self.n + 1)
         self.y = self.f(self.x)
@@ -47,11 +58,15 @@ class NewtonCotes:
 
         return integral, self.eps
 
+    # endregion
+
+    # region Input
     # Example usage
     def choose_input(self):
         print('1. f, a, b, eps')
         print('2. x, y in file input.txt')
         self.option = int(input('choose option 1 or 2: '))
+        # khong can luoi phu - dung cong thuc M2
         if self.option == 1:
             self.n = int(
                 sqrt((max_second_derivative(self.f, self.a, self.b) * (self.b - self.a) ** 3)) / (12 * self.eps))
@@ -63,6 +78,9 @@ class NewtonCotes:
             self.a = self.x[0]
             self.b = self.x[-1]
 
+    # endregion
+
+    # region Main
     def run(self):
         self.choose_input()
 
@@ -74,6 +92,8 @@ class NewtonCotes:
 
         I_simpson, eps_simpson = self.simpson()
         print("Simpson's rule: ", I_simpson, "+/-", eps_simpson)
+
+    # endregion
 
 
 if __name__ == '__main__':

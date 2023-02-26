@@ -30,3 +30,4 @@ test_arr.insert(0, 8)
 x = [1, 2, 3, 4, 5]
 y = [2, 4, 6, 8, 10]
 print(test_arr)
+print(2.0/(2.0+2.0))

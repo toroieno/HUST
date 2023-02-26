@@ -33,10 +33,12 @@ def spline3(k,x0):
         muy=np.empty(n+1)
         lamda=np.empty(n+1)
         h=np.diff(x)
+        # print('h', h)
         dh0=(y[1]-y[0])/(x[1]-x[0])
         dhn=(y[n]-y[n-1])/(x[n]-x[n-1])
         d[0]=6/h[0]*((y[1]-y[0])/h[0]-dh0)
         d[n]=6/h[n-1]*(dhn-(y[n]-y[n-1])/h[n-1])
+        # print('d0, dn', d[0], d[n])
         anpha[1]=1/(-2)
         beta[1]=d[0]/2
         for i in range(1,n):
@@ -44,6 +46,8 @@ def spline3(k,x0):
         for i in range(1,n):
             muy[i]=h[i-1]/(h[i-1]+h[i])
             lamda[i]=h[i]/(h[i-1]+h[i])
+        # print('muy', muy)
+        # print('lamda', lamda)
         for i in range(1,n):
             anpha[i+1]=lamda[i]/(-2-anpha[i]*muy[i])
             beta[i+1]=(muy[i]*beta[i]-d[i])/(-2-anpha[i]*muy[i])
@@ -52,6 +56,7 @@ def spline3(k,x0):
             m[i]=anpha[i+1]*m[i+1]+beta[i+1]
         return m
     m=tinhM(x,y,n)
+    print('m', m)
     if k==1:
         for j in range(1,n+1):
             print('S3' +'['+ str(x[j-1])+','+str(x[j])+']'+'= ' + str(round(m[j - 1] / (6 * h[j - 1]),3)) + '(' + str(x[j]) + '- x)^3' +
@@ -103,7 +108,7 @@ for i in x0:
   y1.append(spline1(0,i))
   y2.append(spline2(0,i))
 plt.plot(x0,y3)
-plt.plot(x0,y1)
-plt.plot(x0,y2)
+# plt.plot(x0,y1)
+# plt.plot(x0,y2)
 plt.scatter(x,y)
 plt.show()

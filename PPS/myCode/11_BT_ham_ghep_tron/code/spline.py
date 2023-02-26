@@ -82,19 +82,19 @@ class Spline:
         h = [0]
         h.extend(np.diff(self.x))
         print('h:', h)
-        n = len(self.x)-1
+        n = len(self.x) - 1
 
         dh_0 = (self.y[1] - self.y[0]) / (self.x[1] - self.x[0])
-        dh_n = (self.y[n] - self.y[n-1]) / (self.x[n] - self.x[n-1])
+        dh_n = (self.y[n] - self.y[n - 1]) / (self.x[n] - self.x[n - 1])
 
-        d = np.empty(n+1)
+        d = np.empty(n + 1)
         print('d:', d)
         d[0] = 6 / h[1] * ((self.y[1] - self.y[0]) / h[1] - dh_0)
-        d[n] = 6 / h[n-1] * (dh_n - (self.y[n] - self.y[n-1]) / h[n-1])
+        d[n] = 6 / h[n - 1] * (dh_n - (self.y[n] - self.y[n - 1]) / h[n - 1])
         print('d0', d[0])
         print('dn', d[n])
-        lamda = np.empty(n+1)
-        muy = np.empty(n+1)
+        lamda = np.zeros(n + 1)
+        muy = np.zeros(n + 1)
         for i in range(1, n):
             lamda[i] = h[i + 1] / (h[i] + h[i + 1])
             muy[i] = h[i] / (h[i] + h[i + 1])
@@ -108,7 +108,7 @@ class Spline:
         B = [0]
         a = [0]
         b = [0]
-        for i in range(1, n+1):
+        for i in range(1, n + 1):
             A_i = 1 / h[i] * (self.y[i - 1] - m[i - 1] * (h[i] ** 2) / 6)
             B_i = 1 / h[i] * (self.y[i] - m[i] * (h[i] ** 2) / 6)
             A.append(A_i)
@@ -118,7 +118,7 @@ class Spline:
             b_i = m[i] / (6 * h[i])
             a.append(a_i)
             b.append(b_i)
-            print('S3[{0},{1}]={2}({3}-x)^3+{4}(x-{5})^3+{6}({7}-x)+{8}(x-{9})'.format(self.x[i - 1], self.x[i],
+            print('S3[{0},{1}]={2:.5f}({3}-x)^3+{4:.5f}(x-{5})^3+{6:.5f}({7}-x)+{8:.5f}(x-{9})'.format(self.x[i - 1], self.x[i],
                                                                                        a[i], self.x[i],
                                                                                        b[i], self.x[i - 1],
                                                                                        A[i], self.x[i],
@@ -128,29 +128,29 @@ class Spline:
         self.p = []
         for i in range(1, len(self.x)):
             hsA = b[i] - a[i]
-            hsB = 3 * (a[i]*self.x[i] - b[i]*self.x[i-1])
-            hsC = 3*b[i]*(self.x[i-1]**2) - 3*a[i]*(self.x[i]**2) - A[i] + B[i]
-            hsD = a[i]*(self.x[i]**3) - b[i]*(self.x[i-1]**3) + A[i]*self.x[i] - B[i]*self.x[i-1]
+            hsB = 3 * (a[i] * self.x[i] - b[i] * self.x[i - 1])
+            hsC = 3 * b[i] * (self.x[i - 1] ** 2) - 3 * a[i] * (self.x[i] ** 2) - A[i] + B[i]
+            hsD = a[i] * (self.x[i] ** 3) - b[i] * (self.x[i - 1] ** 3) + A[i] * self.x[i] - B[i] * self.x[i - 1]
             p_x = [hsA, hsB, hsC, hsD]
             self.p.append(p_x)
-
 
     # endregion
 
     def truy_duoi(self, A, B, d, n):
-        alpha = np.empty(n + 1)
-        beta = np.empty(n + 1)
+        alpha = np.zeros(n + 1)
+        beta = np.zeros(n + 1)
 
         C_i = -2
-        alpha[1] = B[0] / C_i
+        alpha[1] = 1 / C_i
         beta[1] = -d[0] / C_i
 
         for i in range(1, n):
             alpha[i + 1] = B[i] / (C_i - alpha[i] * A[i])
-            beta[i + 1] = (A[i] * beta[i] + d[i]) / (C_i - alpha[i] * A[i])
+            beta[i + 1] = (A[i] * beta[i] - d[i]) / (C_i - alpha[i] * A[i])
 
-        x = np.empty(n + 1)
-        x[n] = (A[n] * beta[n] + d[n]) / (C_i - A[n] * alpha[n])
+        x = np.zeros(n + 1)
+        # x[n] = (A[n] * beta[n] + d[n]) / (C_i - A[n] * alpha[n])
+        x[n] = (1 * beta[n] - d[n]) / (C_i - 1 * alpha[n])
         for i in range(n - 1, -1, -1):
             x[i] = alpha[i + 1] * x[i + 1] + beta[i + 1]
 
@@ -196,9 +196,9 @@ class Spline:
     # region Main
     def run(self):
         self.x, self.y = read_file('../input.txt')
-        self.spline_3()
-        self.draw_graph()
-        # self.choose_option()
+        # self.spline_3()
+        # self.draw_graph()
+        self.choose_option()
 
     # endregion
 
