@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/document/luoi phu.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PPS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/code/newton_cotez.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/SPLINE.py" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/SPLINE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/22. Hàm ghép trơn (Spline)/Code và HDSD/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/input.txt" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
@@ -71,7 +67,7 @@
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\12_BT_Euler" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.spline">
+  <component name="RunManager" selected="Python.least_square">
     <configuration name="ADAM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +89,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Runghe_Kutta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="create_input" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +97,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/13_BT_RK/code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/13_BT_RK/code/Runghe_Kutta.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/create_input.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="(V1) Adam4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="least_square" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +118,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others_code/29. Phương pháp ADAMs/(V1) Adam4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myCode/10_BT_binh_phuong_toi_thieu/code/least_square.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.least_square" />
+        <item itemvalue="Python.create_input" />
         <item itemvalue="Python.spline" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.ADAM" />
-        <item itemvalue="Python.(V1) Adam4" />
-        <item itemvalue="Python.Runghe_Kutta" />
       </list>
     </recent_temporary>
   </component>
