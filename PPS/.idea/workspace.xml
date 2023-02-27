@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="add eps for least square">
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/more_from_idol/Saiphan.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/more_from_idol/Saiphan.ipynb" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
@@ -232,12 +229,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py</url>
-          <line>99</line>
+          <line>95</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myCode/11_BT_ham_ghep_tron/code/spline.py</url>
-          <line>98</line>
+          <line>94</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
