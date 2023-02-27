@@ -123,7 +123,7 @@ def vienquanh_inverse(A):
 def pack3(theta,M,y):
     return vienquanh_inverse(M)@theta.T@y
 
-u=[u0,u1,u2]
+u=[u1,u5]
 
 theta=pack1(u,x)
 print(theta)

@@ -77,14 +77,14 @@ class Boundary:
     def input(self):
         self.check_boundary = 1  # chọn bài toán biên loại 1 hoặc 3
         # cho khoảng để tính - input x0 < x < x_end
-        self.p = lambda x: 1
-        self.q = lambda x: x**2
-        self.f = lambda x: 2
-        self.a = -1
-        self.b = 1
-        self.h = 0.5
-        self.u_a = 0
-        self.u_b = 0
+        self.p = lambda x: 1 + x*x
+        self.q = lambda x: 4*x*x*x - 6*x*x + 2.25*x
+        self.f = lambda x: 53*exp(-x*x)*(1.25*x*x-2.75*x-2)
+        self.a = 0
+        self.b = 3
+        self.h = 0.01
+        self.u_a = 53
+        self.u_b = 53
         # bien loai 3
         self.sigma1 = 0
         self.sigma2 = 0
@@ -97,6 +97,11 @@ class Boundary:
     def run(self):
         self.input()
         y = self.boundary()
+        x_points = np.linspace(0, 3, 302)
+        y_points = y
+        plt.plot(x_points, y_points)
+        print(len(y))
+        plt.show()
         print('y ', y)
     # endregion
 
