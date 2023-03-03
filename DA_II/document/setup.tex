@@ -3,6 +3,7 @@
 \usepackage{array, makecell}
 \usepackage{graphicx, graphics}
 \renewcommand\theadfont{\bfseries}
+\usepackage{lscape, pdflscape} % xoay trang \begin{landscape}
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{wrapfig}
@@ -23,3 +24,8 @@
 \newcommand*{\textoverline}[1]{$\overline{\hbox{#1}}\m@th$}
 \makeatother
 \usepackage{hyperref}
+
+\fancypagestyle{lscape}{% 
+  \fancyhf{} % clear all header and footer fields 
+  
+}

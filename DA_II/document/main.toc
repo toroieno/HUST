@@ -1,21 +1,23 @@
 \contentsline {chapter}{Mở đầu}{1}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}Tổng quan về đề tài}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Lý do chọn đề tài}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Yêu cầu của bài toán}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Tác nhân của hệ thống}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Mô tả hệ thống}{7}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Dành cho quản trị viên}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Dành cho sinh viên}{7}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Dành cho giảng viên}{7}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Dành cho cán bộ}{8}{subsection.1.4.4}%
-\contentsline {chapter}{\numberline {2}Phân tích hệ thống}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Biểu đồ phân cấp chức năng}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Biểu đồ usecase}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Biểu đồ lớp}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Đặc tả usecase}{14}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Biểu đồ tuần tự}{18}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Thiết kế hệ thống}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sơ đồ thực thể liên kết}{26}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Chi tiết các bảng}{29}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Tổng kết}{32}{chapter.4}%
-\contentsline {chapter}{Tài liệu tham khảo}{33}{chapter*.30}%
+\contentsline {chapter}{\numberline {1}Tổng quan về đề tài}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lý do chọn đề tài}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Yêu cầu của bài toán}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Tác nhân của hệ thống}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Mô tả hệ thống}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Dành cho quản trị viên}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Dành cho sinh viên}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Dành cho giảng viên}{8}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Dành cho cán bộ}{9}{subsection.1.4.4}%
+\contentsline {chapter}{\numberline {2}Phân tích hệ thống}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Biểu đồ phân cấp chức năng}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Biểu đồ usecase}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Biểu đồ lớp}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Đặc tả usecase}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Biểu đồ tuần tự}{19}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Thiết kế hệ thống}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Biểu đồ dữ liệu quan hệ}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Chi tiết các bảng}{27}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Biểu đồ dữ liệu quan hệ}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Giao diện}{32}{section.3.2}%
+\contentsline {chapter}{Kết luận}{36}{chapter*.32}%
+\contentsline {chapter}{Tài liệu tham khảo}{37}{chapter*.33}%

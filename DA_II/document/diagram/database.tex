@@ -1,47 +1,23 @@
-\section{Sơ đồ thực thể liên kết}
-
-    \begin{center}
-      \includegraphics[width=1.1\textwidth]{../drawio/db_sv11.png}
-      \begin{figure}[h]
-        \centering
-        \caption{Sơ đồ thực thể liên kết tổng quát}
-      \end{figure}
-    \end{center}
-    \begin{center}
-      \includegraphics[width=1.1\textwidth]{../drawio/db_sv22.png}
-      \begin{figure}[h]
-        \centering
-        \caption{Sơ đồ thực thể liên kết 1}
-      \end{figure}
-    \end{center}
-    \begin{center}
-      \includegraphics[width=1.1\textwidth]{../drawio/db_sv33.png}
-      \begin{figure}[h]
-        \centering
-        \caption{Sơ đồ thực thể liên kết 2}
-      \end{figure}
-    \end{center}
-
-\section{Chi tiết các bảng}
+\subsection{Chi tiết các bảng}
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.3\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.3\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã số sinh viên & char & 8 \\
+        id & mã số sinh viên & char & X &\\
         \hline
-        full\_name & tên sinh viên & char & 255 \\
+        full\_name & tên sinh viên & char & &\\
         \hline
-        gender & giới tính & bit & \\
+        gender & giới tính & bit & &\\
         \hline
-        cpa & điển trung bình & int & \\
+        cpa & điển trung bình & int & &\\
         \hline
-        school\_credit\_debt & số tín chỉ nợ & int & \\
+        school\_credit\_debt & số tín chỉ nợ & int & &\\
         \hline
-        school\_credit\_complete & số tin chỉ đã hoàn thành & int & \\
+        school\_credit\_complete & số tin chỉ đã hoàn thành & int & &\\
         \hline
-        user\_id & mã tài khoản & int & \\
+        user\_id & mã tài khoản & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng sinh viên}
@@ -49,25 +25,25 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã CV & int &  \\
+        id & mã CV & int & X &\\
         \hline
-        summary & giới thiệu bản thân & text & \\
+        summary & giới thiệu bản thân & text & &\\
         \hline
-        skill & kỹ năng của sinh viên & text &  \\
+        skill & kỹ năng của sinh viên & text &  &\\
         \hline
-        education & trình độ học vấn & text & \\
+        education & trình độ học vấn & text & &\\
         \hline
-        activity & hoạt động ngoại khoá & text & \\
+        activity & hoạt động ngoại khoá & text & &\\
         \hline
-        experience & kinh nghiệm & text & \\
+        experience & kinh nghiệm & text & &\\
         \hline
-        project & các dự án đã tham gia & text & \\
+        project & các dự án đã tham gia & text & &\\
         \hline
-        student\_id & mã sinh viên & char & 8\\
+        student\_id & mã sinh viên & char & & X\\
         \hline
       \end{tabular}
       \caption{Bảng CV}
@@ -75,17 +51,17 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã lớp & int &  \\
+        id & mã lớp & int & X &\\
         \hline
-        full\_name & tên lớp & char & 255\\
+        full\_name & tên lớp & char & &\\
         \hline
-        major\_id & mã ngành & char & 8 \\
+        major\_id & mã ngành & char & & X\\
         \hline
-        lecturer\_id & mã giảng viên phụ trách & int & \\
+        lecturer\_id & mã giảng viên phụ trách & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng lớp sinh viên}
@@ -93,15 +69,15 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã ngành & char & 8 \\
+        id & mã ngành & char & X & \\
         \hline
-        full\_name & tên ngành & char & 255\\
+        full\_name & tên ngành & char & &\\
         \hline
-        institute\_id & mã viện & char & 8 \\
+        institute\_id & mã viện & char &  & X\\
         \hline
       \end{tabular}
       \caption{Bảng ngành học}
@@ -109,13 +85,13 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã viện & char & 8 \\
+        id & mã viện & char & X &\\
         \hline
-        full\_name & tên viện & char & 255\\
+        full\_name & tên viện & char & &\\
         \hline
       \end{tabular}
       \caption{Bảng viện đào tạo}
@@ -123,21 +99,21 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã tài khoản người dùng & int &  \\
+        id & mã tài khoản người dùng & int & X &\\
         \hline
-        username & tên đăng nhập & char & 255\\
+        username & tên đăng nhập & char & &\\
         \hline
-        email\_school & email trường cấp & char & 255\\
+        email\_school & email trường cấp & char & &\\
         \hline
-        email\_other & email cá nhân & char & 255\\
+        email\_other & email cá nhân & char & &\\
         \hline
-        facebook\_link & đường dẫn liên kết với mạng xã hội người dùng & char & 255\\
+        facebook\_link & đường dẫn liên kết với mạng xã hội người dùng & char & &\\
         \hline
-        role & phân quyền (0 - admin; 1 - giảng viên; 2 - sinh viên) & tinyint & \\
+        role & phân quyền (0 - admin; 1 - giảng viên; 2 - sinh viên) & tinyint & &\\
         \hline
       \end{tabular}
       \caption{Bảng người dùng}
@@ -145,17 +121,17 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã giảng viên & int &  \\
+        id & mã giảng viên & int & X &\\
         \hline
-        full\_name & tên giảng viên & char & 255\\
+        full\_name & tên giảng viên & char & &\\
         \hline
-        gender & giới tính & bit & \\
+        gender & giới tính & bit & &\\
         \hline
-        user\_id & mã tài khoản & int & \\
+        user\_id & mã tài khoản & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng giảng viên}
@@ -163,19 +139,19 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã chủ đề & int &  \\
+        id & mã chủ đề & int & X &\\
         \hline
-        full\_name & tên chủ đề & char & 255\\
+        full\_name & tên chủ đề & char & &\\
         \hline
-        description & mô tả chi tiết & text & \\
+        description & mô tả chi tiết & text & &\\
         \hline
-        major\_id & mã ngành & char & 8\\
+        major\_id & mã ngành & char & & X\\
         \hline
-        lecturer\_id & mã giảng viên & int & \\
+        lecturer\_id & mã giảng viên & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng chủ đề nghiên cứu đồ án}
@@ -183,21 +159,21 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.4\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.4\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã thông tin & int &  \\
+        id & mã thông tin & int & X &\\
         \hline
-        full\_name & tên thực tập & char & 255\\
+        full\_name & tên thực tập & char & &\\
         \hline
-        name\_company & tên công ty thực tập & char & 255\\
+        name\_company & tên công ty thực tập & char & &\\
         \hline
-        address\_company & địa chỉ công ty & char & 255\\
+        address\_company & địa chỉ công ty & char & &\\
         \hline
-        description & mô tả chi tiết nội dung thực tập & text & \\
+        description & mô tả chi tiết nội dung thực tập & text & &\\
         \hline
-        lecturer\_id & mã giảng viên & int & \\
+        lecturer\_id & mã giảng viên & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng thông tin thực tập}
@@ -205,17 +181,17 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.45\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.45\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã đơn & int &  \\
+        id & mã đơn & int & X &\\
         \hline
-        student\_id & mã sinh viên đăng ký & char & 8\\
+        student\_id & mã sinh viên đăng ký & char & & X\\
         \hline
-        semester & học kỳ (1 , 2, 3 - kì hè) & tinyint & \\
+        semester & học kỳ (1 , 2, 3 - kì hè) & tinyint & &\\
         \hline
-        time\_register & thời gian gửi đơn đăng ký & datetime & \\
+        time\_register & thời gian gửi đơn đăng ký & datetime & &\\
         \hline
       \end{tabular}
       \caption{Bảng đơn đăng ký đồ án}
@@ -223,25 +199,25 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.4\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.4\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã đơn chi tiết & int &  \\
+        id & mã đơn chi tiết & int & X &\\
         \hline
-        form\_id & mã đơn & int & \\
+        form\_id & mã đơn & int & & X\\
         \hline
-        status\_contact & trạng thái liên hệ với giảng viên (0 - chưa liên hệ; 1 - đã liên hệ) & bit & \\
+        status\_contact & trạng thái liên hệ với giảng viên (0 - chưa liên hệ; 1 - đã liên hệ) & bit & &\\
         \hline
-        status\_check & trạng thái duyệt đơn & bit & \\
+        status\_check & trạng thái duyệt đơn & bit & &\\
         \hline
-        topic\_orientation & định hướng chủ đề & char & 255\\
+        topic\_orientation & định hướng chủ đề & char & &\\
         \hline
-        type\_project & loại đồ án (1 - toán cơ bản, 2 - toán ứng dụng, 3 - toán-tin, ...) & tinyint & \\
+        type\_project & loại đồ án (1 - toán cơ bản, 2 - toán ứng dụng, 3 - toán-tin, ...) & tinyint & &\\
         \hline
-        desired\_order & thứ tự nguyện vọng (1, 2, 3) & tinyint & \\
+        desired\_order & thứ tự nguyện vọng (1, 2, 3) & tinyint & &\\
         \hline
-        lecturer\_id & mã giảng viên & int & \\
+        lecturer\_id & mã giảng viên & int & & X\\
         \hline
       \end{tabular}
       \caption{Bảng chi tiết đơn đăng ký đồ án}
@@ -249,25 +225,35 @@
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{|l|p{0.4\textwidth}|c|c|}
+      \begin{tabular}{|l|p{0.4\textwidth}|c|c|c|}
         \hline
-        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{Độ rộng} \\
+        \textbf{Thuộc tính} & \textbf{Diễn giải} & \textbf{Kiểu dữ liệu} & \textbf{PK} & \textbf{FK}\\
         \hline
-        id & mã đơn & int &  \\
+        id & mã đơn & int & X &\\
         \hline
-        student\_id & mã sinh viên đăng ký & char & 8\\
+        student\_id & mã sinh viên đăng ký & char & & X\\
         \hline
-        semester & học kỳ (1, 2, 3 - kì hè) & tinyint & \\
+        semester & học kỳ (1, 2, 3 - kì hè) & tinyint & &\\
         \hline
-        time\_register & thời gian gửi đơn đăng ký & datetime & \\
+        time\_register & thời gian gửi đơn đăng ký & datetime & &\\
         \hline
-        lecturer\_id & mã giảng viên & int & \\
+        lecturer\_id & mã giảng viên & int & & X\\
         \hline
-        status\_contact & trạng thái liên hệ với giảng viên (0 - chưa liên hệ; 1 - đã liên hệ) & bit & \\
+        status\_contact & trạng thái liên hệ với giảng viên (0 - chưa liên hệ; 1 - đã liên hệ) & bit & &\\
         \hline
-        status\_check & trạng thái duyệt đơn & bit & \\
+        status\_check & trạng thái duyệt đơn & bit & &\\
         \hline
       \end{tabular}
       \caption{Bảng chi tiết đơn đăng ký thực tập}
     \end{table}
 
+\subsection{Biểu đồ dữ liệu quan hệ}
+\begin{landscape}
+  \begin{center}
+    \includegraphics[width=1.5\textwidth]{../drawio/db_sv11.png}
+    \begin{figure}[h]
+      \centering
+      \caption{Biểu đồ dữ liệu quan hệ}
+    \end{figure}
+  \end{center}
+\end{landscape}
