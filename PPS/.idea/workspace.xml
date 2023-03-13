@@ -5,16 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57bfc340-9475-4428-aa39-b37ff548c1b6" name="Changes" comment="add eps for least square">
-      <change beforePath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/1_tong_quan_ve_de_tai.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/gv_nhan_xet.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/gv_nhan_xet.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DA_II/document/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more_from_idol/NoiSuyNguoc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/more_from_idol/NoiSuyNguoc.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more_from_idol/inputNSNguoc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/more_from_idol/inputNSNguoc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/15_BT_bai_toan_bien/code/boundery.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/15_BT_bai_toan_bien/code/boundery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCode/9_BT_tinh_gan_dung_tich_phan/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/MSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/MSE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/others_code/21. Bình phương cực tiểu/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/document/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/document/main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/bieudophancapchucnang.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/bieudophancapchucnang.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/bieudophancapchucnang.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/bieudophancapchucnang.drawio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/drawio/usecasee.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/drawio/usecasee.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/api/BaseApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/api/BaseApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/DataTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/DrawNavigation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/FooterMain.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/HeaderBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/HeaderBarStudent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/HeaderLogo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/IntersectionScroll.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/ListLoading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/ScrollLoading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/SearchAutocomplete.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/TestSomething.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/admin/internships/InternshipsList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/admin/lecturers/LecturersList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/admin/projects/ProjectsList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/admin/students/FilterForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/admin/students/StudentsList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/student/CvForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/student/ProjectForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/components/student/StudentList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/views/AboutPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/views/ContactPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/views/HelpPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/views/HomePage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DA_II/project/fe/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../DA_II/project/fe/yarn.lock" afterDir="false" />
     </list>
     <list id="f2b33819-d2cf-4d13-8460-c2bdd1dd7ed2" name="Changes by PC" comment="" />
     <list id="e446a10f-9162-4640-84a2-5a819d05af41" name="Changes by trien" comment="" />
@@ -45,17 +77,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/trien/Documents/GitHub/HUST/PPS/more_from_idol",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/trien/Documents/GitHub/HUST/PPS/more_from_idol&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trien\Documents\GitHub\HUST\PPS\more_from_idol" />

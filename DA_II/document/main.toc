@@ -21,3 +21,4 @@
 \contentsline {section}{\numberline {3.2}Giao diện}{32}{section.3.2}%
 \contentsline {chapter}{Kết luận}{36}{chapter*.32}%
 \contentsline {chapter}{Tài liệu tham khảo}{37}{chapter*.33}%
+\contentsline {chapter}{Chỉ mục}{38}{chapter*.34}%

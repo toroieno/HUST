@@ -36,21 +36,21 @@ class BaseApi {
   }
 
   /** Common api **/
-  login ({ name, password }) {
-    return new Promise((resolve, reject) => {
-      const req = {
-        'name': name,
-        'password': password
-      }
+  // login ({ username, password }) {
+  //   return new Promise((resolve, reject) => {
+  //     const req = {
+  //       'username': username,
+  //       'password': password
+  //     }
 
-      this.submit('post', '/webauthenticate', req)
-        .then(response => {
-          store.commit(SET_TOKEN, response.data.token)
-          resolve(response)
-        })
-        .catch(error => reject(error))
-    })
-  }
+  //     this.submit('post', '/login', req)
+  //       .then(response => {
+  //         store.commit(SET_TOKEN, response.data.token)
+  //         resolve(response)
+  //       })
+  //       .catch(error => reject(error))
+  //   })
+  // }
 
   logout () {
     return new Promise((resolve, reject) => { // eslint-disable-line
