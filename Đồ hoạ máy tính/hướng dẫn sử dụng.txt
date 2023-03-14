@@ -1,0 +1,5 @@
+Hướng dẫn sử dụng:
+- giải nén
+- mở bằng visual studio
+- vào src/model_loading/bvbm -> mở file model_loading.cpp (f5 chạy)
+- file sẽ được build tại: bin/model_loading/model_loading__bvbm.exe
