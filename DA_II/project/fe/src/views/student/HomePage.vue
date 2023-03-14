@@ -1,34 +1,22 @@
 <template>
   <v-app class="container">
-    <HeaderLogo />
-    <div class="header-bar pl-15 pr-15">
-      <HeaderBar />
-    </div>
-    <v-main>
-      <router-view></router-view>
-    </v-main>
-    <FooterMain />
+    <!-- <h1>Trang chủ</h1> -->
+    <v-img
+      class="container"
+      max-height="529"
+      max-width="1152"
+      src="@/assets/SAMI_21.jpg"
+    ></v-img>
   </v-app>
 </template>
 
 <script>
-import HeaderLogo from '@/layouts/student/HeaderLogo.vue';
-import FooterMain from '@/layouts/student/FooterMain.vue';
-import HeaderBar from '@/layouts/student/HeaderBar.vue';
-
-
 export default {
-    name: "App",
+    name: "HomePage",
     data: () => ({
-      navbar: false,
-      datas: [
-      ],
     }),
 
     components: {
-      HeaderLogo,
-      FooterMain,
-      HeaderBar,
     },
 
     methods: {

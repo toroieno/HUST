@@ -42,7 +42,7 @@
       return {
         tab: null,
         navbars: [
-          {name: 'Trang chủ', path: '/'},
+          {name: 'Trang chủ', path: '/home'},
           {name: 'Thông tin cá nhân', path: '/student/informations'},
           {name: 'Tạo CV', path: '/cv'},
           {name: 'Đồ án', path: '/project_register', items: [{title: 'Thông tin đề tài đồ án'}, {title: 'Điền form đăng ký'}]},
